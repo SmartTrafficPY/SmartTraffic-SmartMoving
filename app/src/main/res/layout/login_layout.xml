@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="229dp"
+        android:layout_height="197dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/smicono"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="306dp"
+        android:text="SmartMoving"
+        android:textColor="#F7FAF9"
+        app:autoSizeTextType="uniform" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:hint="Email"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginBottom="239dp"
+        android:background="#F0ECEC"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:hint="Contraseña"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="158dp"
+        android:background="#F0ECEC"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rectangle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:color="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="86dp"
+        android:text="Entrar"
+        android:textColor="#050404"
+        android:textColorHighlight="#00772A2A" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginBottom="40dp"
+        android:autoLink="email"
+        android:text="Registrarme"
+        android:textColor="#F5090606"
+        android:textColorHighlight="#000C0909"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
