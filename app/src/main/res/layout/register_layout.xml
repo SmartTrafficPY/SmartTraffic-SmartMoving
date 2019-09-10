@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/registryProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        >
+
+        <ImageView
+            android:layout_width="377dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/smicono" />
+
+    <TextView
+        android:id="@+id/signUpLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textColor="#0A0A0C"
+        android:textFontWeight="2500"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/usernameSignUp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastnameSignUp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="377dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/passwordSignUp"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Crear Contraseña"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/passwordSignUp"
+            android:background="#59A7A0A8"
+            app:srcCompat="@android:drawable/ic_menu_view" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="379dp"
+        android:layout_height="63dp">
+
+        <TextView
+            android:id="@+id/ageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Fecha de nacimiento"
+            android:textColor="#120F13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/birthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ageTextView"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="yyyy-MM-dd"
+            android:inputType="date"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="62dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="9dp"
+            android:layout_toRightOf="@+id/birthDate"
+            android:background="#286B5D62"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sexTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Sexo"
+        android:textColor="#241E20"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/sexRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <RadioButton
+            android:id="@+id/maleRadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/femaleRadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:text="Femenino" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/typemovementTextView"
+        android:layout_width="384dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Tipo de movilidad"
+        android:textColor="#241E20"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/typemovementradio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/noneRadButton"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/typemovementradio"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Otro" />
+
+            <RadioButton
+                android:id="@+id/wheelchairRadButton"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Silla de ruedas" />
+
+            <RadioButton
+                android:id="@+id/stickRadButton"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Baston" />
+
+            <RadioButton
+                android:id="@+id/crutchRadButton"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Muletas" />
+
+            <RadioButton
+                android:id="@+id/walkerRadButton"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Andador" />
+
+            <RadioButton
+                android:id="@+id/babycarriageRadButton"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Carrito de bebe" />
+
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_rectangle"
+        android:text="Registrarse"
+        android:textColor="#F8F7F8" />
+
+</LinearLayout>

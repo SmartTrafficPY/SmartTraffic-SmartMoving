@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background02"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/smicono" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SmartMoving"
+            android:textAlignment="center"
+            android:textColor="#805DA3"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/emaillogin"
+            android:layout_width="377dp"
+            android:layout_height="58dp"
+            android:layout_margin="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="12dp"
+            android:background="#F2E9F3"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#0A0A11"
+            android:textColorHighlight="#3F51B5"
+            android:textColorHint="#79141416"
+            android:textColorLink="#00050404" />
+
+        <EditText
+            android:id="@+id/passwlogin"
+            android:layout_width="378dp"
+            android:layout_height="58dp"
+            android:layout_margin="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#F1EEF5"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="#9F100F13" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="Recuperar contraseña"
+            android:textAlignment="center"
+            android:textColor="#9B1616"
+            android:textIsSelectable="true" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_rectangle"
+            android:shadowColor="#3F51B5"
+            android:text="Entrar"
+            android:textColor="#F7F1F3" />
+
+
+        <TextView
+            android:id="@+id/linkSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="Registrarse"
+            android:textAlignment="center"
+            android:textColor="#202972"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+
+</android.constraintlayout.widget.ConstraintLayout>
