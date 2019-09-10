@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.constraintlayout.widget.ConstraintLayout
+
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activities.LoginActivity">
-
-    <LinearLayout
+    tools:context=".activities.LoginActivity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background02"
         android:orientation="vertical">
-
 
         <ImageView
             android:layout_width="match_parent"
@@ -87,7 +83,6 @@
             android:text="Entrar"
             android:textColor="#F7F1F3" />
 
-
         <TextView
             android:id="@+id/linkSignUp"
             android:layout_width="match_parent"
@@ -101,4 +96,3 @@
             android:textIsSelectable="true" />
     </LinearLayout>
 
-</android.constraintlayout.widget.ConstraintLayout>
