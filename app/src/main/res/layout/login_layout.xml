@@ -5,44 +5,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".activities.LoginActivity"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background02"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="219dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/smicono" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background02"
+    android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
             android:text="SmartMoving"
             android:textAlignment="center"
             android:textColor="#805DA3"
             android:textSize="50dp" />
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            android:layout_marginTop="10dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/smicono" />
+
         <EditText
-            android:id="@+id/emaillogin"
-            android:layout_width="377dp"
+            android:id="@+id/username"
+            android:layout_width="378dp"
             android:layout_height="58dp"
             android:layout_margin="12dp"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginRight="12dp"
             android:layout_marginBottom="12dp"
-            android:layout_weight="12dp"
-            android:background="#F2E9F3"
+            android:background="#F1EEF5"
             android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:textColor="#0A0A11"
-            android:textColorHighlight="#3F51B5"
-            android:textColorHint="#79141416"
-            android:textColorLink="#00050404" />
+            android:inputType="textPersonName"
+            android:hint="username" />
 
         <EditText
             android:id="@+id/passwlogin"
@@ -59,16 +56,6 @@
             android:inputType="textPassword"
             android:textColorHint="#9F100F13" />
 
-        <TextView
-            android:id="@+id/forgotPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="false"
-            android:text="Recuperar contraseña"
-            android:textAlignment="center"
-            android:textColor="#9B1616"
-            android:textIsSelectable="true" />
-
         <Button
             android:id="@+id/btnlogin"
             android:layout_width="match_parent"
@@ -79,7 +66,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/btn_rectangle"
-            android:shadowColor="#3F51B5"
+            android:shadowColor="#C598CC"
             android:text="Entrar"
             android:textColor="#F7F1F3" />
 
@@ -87,8 +74,7 @@
             android:id="@+id/linkSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:layout_weight="1"
+            android:background="#00E2E2E2"
             android:focusable="false"
             android:text="Registrarse"
             android:textAlignment="center"

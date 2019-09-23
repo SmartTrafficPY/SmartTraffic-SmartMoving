@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="smarttraffic.smartmoving"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:fullBackupOnly="false"
+        android:icon="@drawable/smicono"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/smicono"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="smarttraffic.smartmoving.activities.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="smarttraffic.smartmoving.activities.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="smarttraffic.smartmoving.activities.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="smarttraffic.smartmoving.activities.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.MainActivity" />
+        </activity>
+
+        <service
+            android:name="smarttraffic.smartmoving.services.RegistrationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="smarttraffic.smartmoving.Receivers.RegistrationReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="registrationIntent" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="smarttraffic.smartmoving.services.LoginService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="smarttraffic.smartmoving.Receivers.LoginReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="loginIntent" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="smarttraffic.smartmoving.activities.ChangePasswActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+    </application>
+
+</manifest>
