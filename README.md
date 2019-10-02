@@ -3,8 +3,6 @@
 </p>
 
 # SmartTraffic-SmartMoving
-Desarrollo parte cliente del sistema `SmartMoving`
-
 Repositorio correspondiente al desarrollo de la parte cliente de la herramienta `SmartMoving`, uno de los casos de estudio dentro del marco proyecto `SmartTraffic`.
 
 ## REQUIREMENTS
