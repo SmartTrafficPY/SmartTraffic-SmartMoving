@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">smartmoving</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="REPORTAR">reportar</string>
+    <string name="permission">se necesita permiso de la ubicación</string>
 </resources>

@@ -72,14 +72,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword" />
-
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <Button
         android:id="@+id/changePasswordButton"
-        android:layout_width="304dp"
+        android:layout_width="192dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:background="@drawable/btn_rectangle"
         android:text="Cambiar contraseña"
         android:textColor="@color/white" />
 
+        <Button
+            android:id="@+id/gobacktohome"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="75dp"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rectangle" />
+    </RelativeLayout>
 </LinearLayout>

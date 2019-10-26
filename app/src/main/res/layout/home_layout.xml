@@ -1,45 +1,401 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:id="@+id/drawer"
+    tools:openDrawer= "left"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Toolbar -->
-    <android.support.v7.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/toolbar"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:fitsSystemWindows="true"
-        android:minHeight="?attr/actionBarSize"
-        android:elevation="4dp"
-        android:theme="@style/AppTheme.SmartMoving" />
-
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:layout_gravity="center"
+
+           >
+
+
+            <EditText
+                android:id="@+id/searchDestinationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#E0E0E0"
+                android:cursorVisible="false"
+                android:hint="Buscar Camino" />
+
+        </android.support.v7.widget.Toolbar>
 
         <org.osmdroid.views.MapView
-            android:id="@+id/mapFragment"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="3dp" />
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp" />
 
-        <Button
-            android:layout_width="121dp"
-            android:layout_height="126dp"
+
+        <ImageButton
+            android:id="@+id/confirmreport"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="141dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
             android:background="@drawable/btn_circle"
-            android:text="REPORTAR"
-            android:textSize="20dp" />
-    </RelativeLayout>
+            android:src="@drawable/check"
+            android:visibility="invisible" />
 
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/deletereport"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="186dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:visibility="invisible"
+            android:background="@drawable/circlered"
+            android:src="@drawable/resetclose" />
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/scrollPartition"
+            android:layout_width="415dp"
+            android:layout_height="113dp"
+            android:layout_alignParentBottom="true"
+            android:background="#5CFFFFFF"
+            android:contextClickable="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/lytPartition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#5CFFFFFF"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#5CFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#5CFFFFFF"
+                        android:text="Reportar:"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#5CFFFFFF"
+                    android:layout_gravity="end"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:id="@+id/curbramppoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/wheelchairramp"
+                        />
+
+                    <TextView
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/curbramppoi"
+                        android:layout_marginTop="48dp"
+                        android:background="#5CFFFFFF"
+                        android:text="Rampa en esquina"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:id="@+id/bustoppoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:longClickable="true"
+                        android:background="@mipmap/accessiblebuspoi" />
+
+                    <TextView
+                        android:id="@+id/textviewbusstop"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:background="#8DFFFFFF"
+                        android:text="Parada en que pasa bus accesible"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:id="@+id/sidewalkpoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/sidewalkwarning" />
+
+                    <TextView
+                        android:id="@+id/textviewsidewalk"
+                        android:layout_width="89dp"
+                        android:background="#8DFFFFFF"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:text="Vereda mal estado"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:id="@+id/pendientepoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/pendiente" />
+
+                    <TextView
+                        android:id="@+id/textviewpendiente"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:text="Pendiente"
+                        android:background="#8DFFFFFF"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:id="@+id/carpoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/carinsidewalk" />
+
+                    <TextView
+                        android:id="@+id/textviewcar"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:background="#8DFFFFFF"
+                        android:text="Auto en vereda"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:id="@+id/obstaclepoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/obstacle" />
+
+                    <TextView
+                        android:id="@+id/textviewobstacle"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:text="Obstáculo"
+                        android:background="#8DFFFFFF"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:id="@+id/streetpoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/uneven" />
+
+                    <TextView
+                        android:id="@+id/textviewuneven"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:text="Calle empedrada"
+                        android:background="#8DFFFFFF"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/nosidewalk1poi"
+                        android:id="@+id/nosidewalkpoi"
+                         />
+
+                    <TextView
+                        android:id="@+id/textviewstreetinx"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:background="#8DFFFFFF"
+                        android:text="Calle inexistente"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:id="@+id/stairpoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/stair1poi" />
+
+                    <TextView
+                        android:id="@+id/textviewstair"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:background="#8DFFFFFF"
+                        android:text="Escalera o grada"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="#8DFFFFFF"
+                    android:gravity="fill_vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/noramppoi"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:background="@mipmap/noramppoi" />
+
+                    <TextView
+                        android:id="@+id/textviewnoramp"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="48dp"
+                        android:background="#5CFFFFFF"
+                        android:text="No rampa en esquina"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/navviewabout"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="-282dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_gravity="start|left"-->
+        <!--app:headerLayout="@layout/header"-->
+        <!--app:menu="@menu/menu"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginLeft="-282dp">-->
+    <!--</android.support.design.widget.NavigationView>-->
+</android.support.v4.widget.DrawerLayout>

@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-feature android:name="android.hardware.location.gps" />
     <uses-feature android:name="android.hardware.location.network" />
 
@@ -18,16 +17,39 @@
         android:allowBackup="true"
         android:icon="@drawable/smicono"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/smicono"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:replace="android:allowBackup"
-        tools:ignore="GoogleAppIndexingWarning">
+        android:theme="@style/MyAppTheme"
+        android:largeHeap="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".activities.Report_Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.HomeActivity" />
+        </activity>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme.SmartMoving">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +57,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="smarttraffic.smartmoving.activities.LoginActivity"
+            android:name=".activities.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.SmartMoving"
             android:windowSoftInputMode="stateHidden">
@@ -44,7 +66,7 @@
                 android:value="smarttraffic.smartmoving.activities.MainActivity" />
         </activity>
         <activity
-            android:name="smarttraffic.smartmoving.activities.RegisterActivity"
+            android:name=".activities.RegisterActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.SmartMoving"
             android:windowSoftInputMode="stateHidden">
@@ -52,9 +74,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="smarttraffic.smartmoving.activities.MainActivity" />
         </activity>
-
         <activity
-            android:name="smarttraffic.smartmoving.activities.HomeActivity"
+            android:name=".activities.HomeActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.SmartMoving"
@@ -67,7 +88,7 @@
         <service
             android:name=".services.RegistrationService"
             android:enabled="true"
-            android:exported="false"></service>
+            android:exported="false" />
 
         <receiver
             android:name=".Receivers.RegistrationReceiver"
@@ -77,27 +98,29 @@
                 <action android:name="registrationIntent" />
             </intent-filter>
         </receiver>
+
         <service
-        android:name=".services.LoginService"
-        android:enabled="true"
-        android:exported="false">
-        </service>
-        <receiver android:name=".Receivers.LoginReceiver"
-            android:exported="true"
-            android:enabled="true">
+            android:name=".services.LoginService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <receiver
+            android:name=".Receivers.LoginReceiver"
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
-                <action android:name="loginIntent"/>
+                <action android:name="loginIntent" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name="smarttraffic.smartmoving.activities.ChangePasswActivity"
+            android:name=".activities.ChangePasswActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.SmartMoving"
             android:windowSoftInputMode="stateHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="smarttraffic.smartmoving.activities.HomeActivity" />
+                android:value="smarttraffic.smartmoving.activities.AboutActivity" />
         </activity>
     </application>
 

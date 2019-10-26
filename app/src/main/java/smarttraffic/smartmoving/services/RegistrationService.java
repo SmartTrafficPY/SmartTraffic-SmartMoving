@@ -55,7 +55,7 @@ public class RegistrationService extends IntentService {
         Retrofit retrofit = new Retrofit.Builder()
 
                 .client(okHttClient)
-                .baseUrl(Constants.BASE_URL)
+                .baseUrl(Constants.BASE_URL_HOME)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 

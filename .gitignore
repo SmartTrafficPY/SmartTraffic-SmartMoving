@@ -11,3 +11,5 @@
 /build
 /captures
 .externalNativeBuild
+
+app/src/main/java/smarttraffic/smartmoving/SMovingInitialToken.java

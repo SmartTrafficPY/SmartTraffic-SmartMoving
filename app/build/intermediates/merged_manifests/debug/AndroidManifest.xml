@@ -41,15 +41,37 @@
         android:fullBackupOnly="false"
         android:icon="@drawable/smicono"
         android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/smicono"
         android:supportsRtl="true"
-        android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/MyAppTheme" >
+        <activity
+            android:name="smarttraffic.smartmoving.activities.Report_Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name="smarttraffic.smartmoving.activities.AboutActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.HomeActivity" />
+        </activity>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="smarttraffic.smartmoving.activities.MainActivity" >
+        <activity
+            android:name="smarttraffic.smartmoving.activities.MainActivity"
+            android:theme="@style/AppTheme.SmartMoving" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -102,8 +124,7 @@
         <service
             android:name="smarttraffic.smartmoving.services.LoginService"
             android:enabled="true"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
 
         <receiver
             android:name="smarttraffic.smartmoving.Receivers.LoginReceiver"
@@ -121,7 +142,7 @@
             android:windowSoftInputMode="stateHidden" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="smarttraffic.smartmoving.activities.HomeActivity" />
+                android:value="smarttraffic.smartmoving.activities.AboutActivity" />
         </activity>
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

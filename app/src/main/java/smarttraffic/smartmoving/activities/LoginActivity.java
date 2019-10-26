@@ -17,6 +17,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
+import com.wang.avi.AVLoadingIndicatorView;
+
 import smarttraffic.smartmoving.R;
 
 import butterknife.BindView;
@@ -43,11 +45,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
         ButterKnife.bind(this);
-        /*etEmail = (EditText) findViewById(R.id.emaillogin);
-        etPassword = (EditText) findViewById(R.id.passwlogin);
-        btnLogin = (Button) findViewById(R.id.btnlogin);
-        tvRegister = (TextView) findViewById(R.id.linkSignUp);
-        tvForgotpassw = (TextView) findViewById(R.id.forgotPassword);*/
 
          /*tvForgotpassw.setOnClickListener(new View.OnClickListener(){
            @Override
@@ -74,6 +71,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
         IntentFilter filter = new IntentFilter();
         filter.addAction(LoginService.LOGIN_ACTION);
         filter.addAction(LoginService.BAD_LOGIN_ACTION);
@@ -89,10 +87,10 @@ public class LoginActivity extends AppCompatActivity {
     }
     private void showToast(String message) {
         Toast toast = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.setGravity(Gravity.BOTTOM, 0, 0);
         LinearLayout toastContentView = (LinearLayout) toast.getView();
         ImageView imageView = new ImageView(getApplicationContext());
-        imageView.setImageResource(R.drawable.smicono);
+        imageView.setImageResource(R.drawable.alerticon);
         toastContentView.addView(imageView, 0);
         toast.show();
     }
@@ -101,11 +99,15 @@ public class LoginActivity extends AppCompatActivity {
             Log.d(LOG_TAG, "User trying to make the login");
 
             btnLogin.setEnabled(false);
+            AVLoadingIndicatorView avLoadingIndicatorView=new AVLoadingIndicatorView(LoginActivity.this);
+            avLoadingIndicatorView.setIndicator("BallSpinFadeLoader");
+            avLoadingIndicatorView.setIndicatorColor(R.color.white);
 
             final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
                     R.style.AppTheme_Dark_Dialog);
             progressDialog.setIndeterminate(true);
-            progressDialog.setMessage("Verificando...");
+            progressDialog.setContentView(avLoadingIndicatorView);
+
             sendLoginRequest();
             progressDialog.show();
 

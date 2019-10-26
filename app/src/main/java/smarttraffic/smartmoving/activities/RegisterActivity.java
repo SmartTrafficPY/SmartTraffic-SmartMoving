@@ -30,6 +30,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.Calendar;
 import java.util.Random;
@@ -110,6 +111,13 @@ public class RegisterActivity extends AppCompatActivity {
 
             }
         });
+        birthDate.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
+            @Override
+            public void onClick(View view) {
+                getDatePickedUp();
+            }
+        });
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,7 +158,8 @@ public class RegisterActivity extends AppCompatActivity {
     }
     @RequiresApi(api= Build.VERSION_CODES.N)
     private void getDatePickedUp(){
-        DatePickerDialog datePickerDialog = new DatePickerDialog(this, R.style.datepicker, new DatePickerDialog.OnDateSetListener() {
+
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, R.style.date_picker_theme, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 final int mesActual = month + 1;
@@ -165,11 +174,15 @@ public class RegisterActivity extends AppCompatActivity {
     private void createRegister(){
         Log.d(LOG_TAG, "User trying to resgistry");
         signInBtn.setEnabled(false);
-
+        AVLoadingIndicatorView avLoadingIndicatorView=new AVLoadingIndicatorView(RegisterActivity.this);
+        avLoadingIndicatorView.setIndicator("BallSpinFadeLoader");
+        avLoadingIndicatorView.setIndicatorColor(R.color.white);
         final ProgressDialog progressDialog = new ProgressDialog(RegisterActivity.this,
                 R.style.AppTheme_Dark_Dialog);
         progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Creando el registro...");
+        progressDialog.setMessage("Creando el registro");
+
+        progressDialog.setContentView(avLoadingIndicatorView);
 
         if(dataIsCorrectlyComplete()){
             sendRegistrationPetition();
@@ -206,10 +219,10 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void showToast(String message) {
         Toast toast = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.setGravity(Gravity.BOTTOM, 0, 0);
         LinearLayout toastContentView = (LinearLayout) toast.getView();
         ImageView imageView = new ImageView(getApplicationContext());
-        imageView.setImageResource(R.drawable.smicono);
+        imageView.setImageResource(R.drawable.alerticon);
         toastContentView.addView(imageView, 0);
         toast.show();
     }

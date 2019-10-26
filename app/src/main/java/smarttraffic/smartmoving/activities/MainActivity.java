@@ -14,8 +14,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.wang.avi.AVLoadingIndicatorView;
 
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import smarttraffic.smartmoving.Constants;
 import smarttraffic.smartmoving.R;
 
@@ -28,15 +31,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ButterKnife.bind(this);
         final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(
                 Constants.CLIENTE_DATA, Context.MODE_PRIVATE);
 
-        final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this, R.style.AppTheme_Dark_Dialog);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Iniciando aplicacion...");
-        progressDialog.show();
+        AVLoadingIndicatorView avLoadingIndicatorView =new AVLoadingIndicatorView(MainActivity.this);
+        avLoadingIndicatorView.setIndicator("BallSpinFadeLoader");
+        avLoadingIndicatorView.setIndicatorColor(R.color.blue);
+        final AVLoadingIndicatorView avi = (AVLoadingIndicatorView) findViewById(R.id.avi);
 
+
+        avi.show();
         new android.os.Handler().postDelayed(
                 new Runnable() {
                     public void run() {
@@ -47,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
                             setWithInternetConnection(false);
                             showToast("Sin conexion");
                         }
-                        progressDialog.dismiss();
+
+                        avi.hide();
                     }
                 }, 2000);
     }

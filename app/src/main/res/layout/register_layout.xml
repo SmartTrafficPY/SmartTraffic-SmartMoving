@@ -150,6 +150,7 @@
         <RadioGroup
             android:id="@+id/typemovementradio"
             android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
             android:layout_height="wrap_content">
 
             <RadioButton
@@ -157,6 +158,7 @@
                 android:layout_width="169dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/typemovementradio"
+
                 android:layout_weight="1"
                 android:checked="true"
                 android:text="Otro" />

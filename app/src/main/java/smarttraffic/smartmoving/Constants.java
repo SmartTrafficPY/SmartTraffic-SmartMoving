@@ -17,7 +17,7 @@ public class Constants {
     private static final long MINUTES_IN_MILLISECONDS = SECONDS_IN_MILLISECONDS * 60;
     private static final long HOURS_IN_MILLISECONDS = MINUTES_IN_MILLISECONDS * 60;
     public static final String BASE_URL = "http://10.20.2.232:8000/";
-    private static final String BASE_URL_HOME = "http://192.168.0.10:8000/";
+    public static final String BASE_URL_HOME = "http://192.168.0.9:8000/";
     private static final String CHANNEL_ID = "SMARTMOVING_CHANNEL_ID";
     private static final String NOTIFICATION_SERVICE = "notification";
     private static final String FROM_PROXIMITY_INTENT = "FROM_PROXIMITY_INTENT";
@@ -25,9 +25,45 @@ public class Constants {
     private static final String LATITUD = "LATITUD";
     private static final String LONGITUD = "LONGITUD";
     private static final String RADIOUS = "RADIOUS";
+    private static final String BROADCAST_GEOFENCE_TRIGGER_INTENT = "BROADCAST_GEOFENCE_TRIGGER_INTENT";
+    public static final String BROADCAST_TRANSITION_ACTIVITY_INTENT = "BROADCAST_TRANSITION_ACTIVITY_INTENT";
+    public static final String GEOFENCE_TRIGGER_ID = "geofenceTriggerId";
+    private static final String BROADCAST_LOCATION_INTENT = "BROADCAST_LOCATION_INTENT";
+    private static final int REQUEST_PERMISSIONS_REQUEST_CODE = 34;
 
-    private static final String TILE_SERVER_URL_HOME = "http://192.168.100.49:80/tile/";
+    public static final String TILE_SERVER_URL_HOME = "https://api.smarttraffic.com.py/tile/";
 
+    public static String getBroadcastLocationIntent() {
+        return BROADCAST_LOCATION_INTENT;
+    }
+
+    public static String getBroadcastGeofenceTriggerIntent() {
+        return BROADCAST_GEOFENCE_TRIGGER_INTENT;
+    }
+
+    public static String getBroadcastTransitionActivityIntent() {
+        return BROADCAST_TRANSITION_ACTIVITY_INTENT;
+    }
+
+    public static long getSecondsInMilliseconds() {
+        return SECONDS_IN_MILLISECONDS;
+    }
+
+    public static long getMinutesInMilliseconds() {
+        return MINUTES_IN_MILLISECONDS;
+    }
+
+    public static long getHoursInMilliseconds() {
+        return HOURS_IN_MILLISECONDS;
+    }
+
+    public static int getRequestPermissionsRequestCode() {
+        return REQUEST_PERMISSIONS_REQUEST_CODE;
+    }
+
+    public static String getGeofenceTriggerId() {
+        return GEOFENCE_TRIGGER_ID;
+    }
 
     public static String getUserPassword() { return USER_PASSWORD; }
 

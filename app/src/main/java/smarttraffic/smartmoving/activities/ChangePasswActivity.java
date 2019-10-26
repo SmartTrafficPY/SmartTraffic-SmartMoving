@@ -119,7 +119,7 @@ public class ChangePasswActivity extends AppCompatActivity {
 
             Retrofit retrofit = new Retrofit.Builder()
                     .client(okHttpClient)
-                    .baseUrl(Constants.BASE_URL)
+                    .baseUrl(Constants.BASE_URL_HOME)
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .build();
 

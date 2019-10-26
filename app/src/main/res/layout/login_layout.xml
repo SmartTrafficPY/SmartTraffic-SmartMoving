@@ -29,7 +29,7 @@
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="378dp"
+            android:layout_width="340dp"
             android:layout_height="58dp"
             android:layout_margin="12dp"
             android:layout_marginLeft="12dp"
@@ -38,12 +38,12 @@
             android:layout_marginBottom="12dp"
             android:background="#F1EEF5"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="username" />
+            android:hint="username"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/passwlogin"
-            android:layout_width="378dp"
+            android:layout_width="342dp"
             android:layout_height="58dp"
             android:layout_margin="12dp"
             android:layout_marginLeft="12dp"
