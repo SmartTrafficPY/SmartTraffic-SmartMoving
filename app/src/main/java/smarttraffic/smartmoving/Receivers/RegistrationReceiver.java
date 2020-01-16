@@ -42,10 +42,6 @@ public class RegistrationReceiver extends BroadcastReceiver {
         private void showToast(String message, Context context){
             Toast toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER, 0, 0);
-            LinearLayout toastContentView = (LinearLayout) toast.getView();
-            ImageView imageView = new ImageView(context);
-            imageView.setImageResource(R.drawable.smicono);
-            toastContentView.addView(imageView, 0);
             toast.show();
         }
 

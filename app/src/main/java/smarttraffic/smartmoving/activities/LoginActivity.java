@@ -1,12 +1,10 @@
 package smarttraffic.smartmoving.activities;
 
-
-import android.app.ProgressDialog;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Gravity;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -43,16 +41,10 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.login_layout);
         ButterKnife.bind(this);
 
-         /*tvForgotpassw.setOnClickListener(new View.OnClickListener(){
-           @Override
-            public void onClick(View v){
-                Intent i;
-                i = new Intent(LoginActivity.this, RecoverPassActivity.class);
-            startActivity(i);
-        });*/
 
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,36 +88,31 @@ public class LoginActivity extends AppCompatActivity {
     }
 
         private void makeLoginHappen() {
-            Log.d(LOG_TAG, "User trying to make the login");
+
 
             btnLogin.setEnabled(false);
             AVLoadingIndicatorView avLoadingIndicatorView=new AVLoadingIndicatorView(LoginActivity.this);
             avLoadingIndicatorView.setIndicator("BallSpinFadeLoader");
             avLoadingIndicatorView.setIndicatorColor(R.color.white);
 
-            final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
-                    R.style.AppTheme_Dark_Dialog);
-            progressDialog.setIndeterminate(true);
-            progressDialog.setContentView(avLoadingIndicatorView);
-
             sendLoginRequest();
-            progressDialog.show();
+
 
             new android.os.Handler().postDelayed(
                     new Runnable() {
                         public void run() {
                             /**Here the service get the request of Login...**/
                             btnLogin.setEnabled(true);
-                            progressDialog.dismiss();
+
                         }
                     }, 2000);
-            eraseCredentials();
+            //eraseCredentials();
         }
 
-        private void eraseCredentials() {
-            etUsername.setText("");
-            etPassword.setText("");
-        }
+        //private void eraseCredentials() {
+        //    etUsername.setText("");
+         //   etPassword.setText("");
+        //}
 
         private void sendLoginRequest() {
             Intent loginIntent = new Intent(LoginActivity.this, LoginService.class);

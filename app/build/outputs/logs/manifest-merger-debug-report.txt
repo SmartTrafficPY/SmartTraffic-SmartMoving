@@ -1,26 +1,29 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
-INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
-INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
-INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
+INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
+INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
+INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\34c81674b2c3a8b19e0beabfc12da720\AndroidManifest.xml:2:1-11:12
 MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8750b87220e10155628ad1c7e7b9c4f1\AndroidManifest.xml:2:1-7:12
 MERGED from [org.osmdroid:osmdroid-wms:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\523608cf3cb317a3c5f9cf13be253059\AndroidManifest.xml:2:1-12:12
 MERGED from [org.osmdroid:osmdroid-mapsforge:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e1a44a77f6054ba7fcf34a202116271f\AndroidManifest.xml:2:1-12:12
 MERGED from [org.osmdroid:osmdroid-geopackage:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\7029305eb033df7f76778e67b1f16555\AndroidManifest.xml:2:1-12:12
 MERGED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:2:1-29:12
+MERGED from [com.facebook.android:facebook-share:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\720377ecb155e853d9fa189aa3691c1d\AndroidManifest.xml:21:1-31:12
 MERGED from [com.wang.avi:library:2.1.3] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dbb00c6822b9043d0527c2a27ba51c55\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:2:1-13:12
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\5019e85ceffce5df8e4b71fad8791cd3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:21:1-37:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d5da48fa2276a6ee83d445893ce50b62\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:21:1-61:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\977d512fabb38d20c7ce3e33f51c0a69\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:17:1-32:12
-MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d5da48fa2276a6ee83d445893ce50b62\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8c34b678c2f88f578beb13741d268596\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\7939df7942177bc8d8eb3719166db1f2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\f3daeceaefcbea5ba4ad76acecde48cd\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\46dd88a1266949835e66f00af99affa5\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\751912e0d3bbc135e425b029a5858be3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\ea85e5b86c4373074884dc78d05e6573\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\916783d5d5c3df7df277967b6375b3d0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d0e1fee92b9145f9e8049985d1eacb2e\AndroidManifest.xml:17:1-22:12
@@ -28,6 +31,7 @@ MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Monica\.gradle
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\6384a1694669f1f5c2f76633e78f45e2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\f210aae0fe4bab45ba7edbf6ca97b644\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d436b9f6d3f31569bffedf3aa3eb70cf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\0b2d6ead1f95d533a3c82bf4556531ed\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\629ae2ba384593ce4ee05685f09f690b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\cf311f7c50299b430d71cbf30bdec8b8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b81991cad33cea71303f1158262ef5a8\AndroidManifest.xml:17:1-22:12
@@ -36,8 +40,9 @@ MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Monica\.grad
 MERGED from [com.android.support:customview:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8d1ea785c918961b5cff24075f418471\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\370bdcfc7cea5e50a7931c366708d3be\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\09768d1ac4890b08c398cc9226472941\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\457ac76a0eda4361fd47a43bc257ea31\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\cdb5181e231ec7009e1018cd8abdccd1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b912f49ead55694d9ce283e535857057\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\580831288549836273a297010d7909c5\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\031010a97b225b2d13b85ae0f84165ff\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\a2d860a7d59182b9cc97243686830162\AndroidManifest.xml:17:1-22:12
@@ -51,79 +56,113 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Monica\.gradle
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\4e8f94a4f30ef86b99721805b7a5c0ca\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\4bc6e29bd81d882d2896a146db0a3911\AndroidManifest.xml:17:1-22:12
 MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
-INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
-INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
+INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
+INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
+INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
 	package
 		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:4:5-39
 		INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
 		INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-127:12
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:1-143:12
 		INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:6:5-81
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:24:5-67
+MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:9:5-67
+MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:6:22-78
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:7:5-79
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:7:5-76
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:7:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:23:5-79
 	android:name
 		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:8:22-76
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:9:5-67
-MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:24:5-67
-MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:9:5-67
-MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:9:5-67
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:9:22-64
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:10:5-75
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:10:22-72
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:11:5-85
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:11:22-82
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:12:5-77
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:12:22-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:14:5-78
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:14:22-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:12:5-81
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:15:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:16:22-77
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:17:22-65
 uses-feature#android.hardware.location.gps
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:13:5-66
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:19:5-66
 MERGED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:19:5-21:36
 MERGED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:19:5-21:36
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:13:19-63
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:19:19-63
 uses-feature#android.hardware.location.network
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:14:5-70
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:20:5-70
 MERGED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:16:5-18:36
 MERGED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:16:5-18:36
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:14:19-67
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:20:19-67
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:21:5-94
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:21:22-91
 application
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:16:5-125:19
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:23:5-141:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\34c81674b2c3a8b19e0beabfc12da720\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\34c81674b2c3a8b19e0beabfc12da720\AndroidManifest.xml:9:5-20
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:7:5-11:19
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:7:5-11:19
+MERGED from [com.facebook.android:facebook-share:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\720377ecb155e853d9fa189aa3691c1d\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\720377ecb155e853d9fa189aa3691c1d\AndroidManifest.xml:28:5-29:19
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\5019e85ceffce5df8e4b71fad8791cd3\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\5019e85ceffce5df8e4b71fad8791cd3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:28:5-59:19
+MERGED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:28:5-59:19
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\977d512fabb38d20c7ce3e33f51c0a69\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\977d512fabb38d20c7ce3e33f51c0a69\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:30:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8c34b678c2f88f578beb13741d268596\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8c34b678c2f88f578beb13741d268596\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\7939df7942177bc8d8eb3719166db1f2\AndroidManifest.xml:22:5-20
@@ -132,12 +171,10 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Monica\
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\f3daeceaefcbea5ba4ad76acecde48cd\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\46dd88a1266949835e66f00af99affa5\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\46dd88a1266949835e66f00af99affa5\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\457ac76a0eda4361fd47a43bc257ea31\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\457ac76a0eda4361fd47a43bc257ea31\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b912f49ead55694d9ce283e535857057\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b912f49ead55694d9ce283e535857057\AndroidManifest.xml:22:5-94
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:7:5-11:19
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\580831288549836273a297010d7909c5\AndroidManifest.xml:22:5-23:19
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\580831288549836273a297010d7909c5\AndroidManifest.xml:22:5-23:19
 MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:11:5-15:19
@@ -145,166 +182,210 @@ MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradl
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b912f49ead55694d9ce283e535857057\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:29:9-35
 	android:label
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:26:9-41
+	android:debuggable
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:30:9-34
 	tools:ignore
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:25:9-48
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:33:9-67
 	android:roundIcon
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:21:9-46
-	android:largeHeap
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:24:9-33
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:28:9-46
 	android:icon
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:18:9-41
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:25:9-41
 	android:allowBackup
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:24:9-35
 		REJECTED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:12:9-36
 	android:theme
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:23:9-42
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:31:9-42
 	android:networkSecurityConfig
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:20:9-69
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:27:9-69
 	android:fullBackupOnly
 		ADDED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:13:9-39
 	tools:replace
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:26:9-44
-activity#smarttraffic.smartmoving.activities.Report_Activity
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:28:9-36:20
-	android:label
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:30:13-45
-	android:windowSoftInputMode
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:32:13-54
-	android:theme
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:31:13-56
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:32:9-44
+provider#com.facebook.FacebookContentProvider
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:34:9-36:38
+	android:authorities
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:34:19-97
+	android:exported
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:36:13-36
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:29:13-55
-meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:33:13-35:84
-	android:value
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:35:17-81
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:34:17-63
-activity#smarttraffic.smartmoving.activities.AboutActivity
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:37:9-45:20
-	android:label
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:39:13-45
-	android:windowSoftInputMode
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:41:13-54
-	android:theme
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:40:13-56
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:38:13-53
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:35:13-64
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:47:9-49:69
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:8:9-10:69
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:8:9-10:69
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:37:9-39:69
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\46dd88a1266949835e66f00af99affa5\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\46dd88a1266949835e66f00af99affa5\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:8:9-10:69
 	android:value
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:49:13-66
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:39:13-66
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:48:13-58
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:38:13-58
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:40:9-107
+	android:value
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:40:66-105
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:40:20-65
+activity#com.facebook.FacebookActivity
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:41:9-43:48
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:43:13-45
+	android:configChanges
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:42:13-97
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:41:19-63
+activity#com.facebook.CustomTabActivity
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:44:9-53:20
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:34:9-67
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:34:9-67
+	android:exported
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:46:13-36
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:45:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:47:13-52:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:48:17-69
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:48:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:49:17-76
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:49:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:50:17-78
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:50:27-75
+data
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:51:13-71
+	android:scheme
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:51:19-68
 activity#smarttraffic.smartmoving.activities.MainActivity
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:51:9-58:20
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:54:9-63:20
 	android:theme
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:52:13-56
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:56:13-56
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:51:19-58
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:55:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:53:13-57:29
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:58:13-62:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:54:17-69
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:59:17-69
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:54:25-66
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:56:17-77
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:61:17-77
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:56:27-74
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:61:27-74
 activity#smarttraffic.smartmoving.activities.LoginActivity
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:59:9-67:20
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:64:9-73:20
 	android:label
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:61:13-45
-	android:windowSoftInputMode
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:63:13-54
-	android:theme
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:62:13-56
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:60:13-53
-activity#smarttraffic.smartmoving.activities.RegisterActivity
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:68:9-76:20
-	android:label
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:70:13-45
-	android:windowSoftInputMode
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:72:13-54
-	android:theme
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:71:13-56
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:69:13-56
-activity#smarttraffic.smartmoving.activities.HomeActivity
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:77:9-86:20
-	android:label
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:79:13-45
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:66:13-45
 	android:launchMode
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:80:13-43
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:67:13-43
 	android:windowSoftInputMode
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:82:13-54
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:69:13-54
 	android:theme
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:81:13-56
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:68:13-56
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:78:13-52
-service#smarttraffic.smartmoving.services.RegistrationService
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:88:9-91:40
-	android:enabled
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:90:13-35
-	android:exported
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:91:13-37
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:65:13-53
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:70:13-72:84
+	android:value
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:72:17-81
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:89:13-57
-receiver#smarttraffic.smartmoving.Receivers.RegistrationReceiver
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:93:9-100:20
-	android:enabled
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:95:13-35
-	android:exported
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:96:13-36
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:94:13-59
-intent-filter#action:name:registrationIntent
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:97:13-99:29
-action#registrationIntent
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:98:17-61
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:98:25-58
-service#smarttraffic.smartmoving.services.LoginService
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:102:9-105:48
-	android:enabled
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:104:13-35
-	android:exported
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:105:13-37
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:103:13-50
-receiver#smarttraffic.smartmoving.Receivers.LoginReceiver
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:107:9-114:20
-	android:enabled
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:109:13-35
-	android:exported
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:110:13-36
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:108:13-52
-intent-filter#action:name:loginIntent
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:111:13-113:29
-action#loginIntent
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:112:17-54
-	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:112:25-51
-activity#smarttraffic.smartmoving.activities.ChangePasswActivity
-ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:116:9-124:20
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:71:17-63
+activity#smarttraffic.smartmoving.activities.ConfigReportsActivity
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:74:9-82:20
 	android:label
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:118:13-45
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:76:13-45
 	android:windowSoftInputMode
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:120:13-54
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:78:13-54
 	android:theme
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:119:13-56
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:77:13-56
 	android:name
-		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:117:13-59
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:75:13-85
+activity#smarttraffic.smartmoving.activities.RegisterActivity
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:83:9-91:20
+	android:label
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:85:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:87:13-54
+	android:theme
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:86:13-56
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:84:13-56
+activity#smarttraffic.smartmoving.activities.HomeActivity
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:92:9-102:20
+	android:label
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:94:13-45
+	android:launchMode
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:95:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:97:13-54
+	android:theme
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:96:13-56
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:93:13-52
+service#smarttraffic.smartmoving.services.RegistrationService
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:104:9-107:40
+	android:enabled
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:106:13-35
+	android:exported
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:107:13-37
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:105:13-57
+receiver#smarttraffic.smartmoving.Receivers.RegistrationReceiver
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:109:9-116:20
+	android:enabled
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:111:13-35
+	android:exported
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:112:13-36
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:110:13-59
+intent-filter#action:name:registrationIntent
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:113:13-115:29
+action#registrationIntent
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:114:17-61
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:114:25-58
+service#smarttraffic.smartmoving.services.LoginService
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:118:9-121:40
+	android:enabled
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:120:13-35
+	android:exported
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:121:13-37
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:119:13-50
+receiver#smarttraffic.smartmoving.Receivers.LoginReceiver
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:123:9-130:20
+	android:enabled
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:125:13-35
+	android:exported
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:126:13-36
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:124:13-52
+intent-filter#action:name:loginIntent
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:127:13-129:29
+action#loginIntent
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:128:17-54
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:128:25-51
+activity#smarttraffic.smartmoving.activities.ChangePasswActivity
+ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:132:9-140:20
+	android:label
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:134:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:136:13-54
+	android:theme
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:135:13-56
+	android:name
+		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml:133:13-59
 uses-sdk
 INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
@@ -321,18 +402,24 @@ MERGED from [org.osmdroid:osmdroid-geopackage:6.1.0] C:\Users\Monica\.gradle\cac
 MERGED from [org.osmdroid:osmdroid-geopackage:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\7029305eb033df7f76778e67b1f16555\AndroidManifest.xml:8:5-10:41
 MERGED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:7:5-9:41
 MERGED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-share:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\720377ecb155e853d9fa189aa3691c1d\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\720377ecb155e853d9fa189aa3691c1d\AndroidManifest.xml:24:5-26:41
 MERGED from [com.wang.avi:library:2.1.3] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dbb00c6822b9043d0527c2a27ba51c55\AndroidManifest.xml:7:5-9:41
 MERGED from [com.wang.avi:library:2.1.3] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dbb00c6822b9043d0527c2a27ba51c55\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:5:5-43
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:5:5-43
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\5019e85ceffce5df8e4b71fad8791cd3\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\5019e85ceffce5df8e4b71fad8791cd3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d5da48fa2276a6ee83d445893ce50b62\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d5da48fa2276a6ee83d445893ce50b62\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\977d512fabb38d20c7ce3e33f51c0a69\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\977d512fabb38d20c7ce3e33f51c0a69\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\64bdd1cb547177d39e13a4198a668c99\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d5da48fa2276a6ee83d445893ce50b62\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d5da48fa2276a6ee83d445893ce50b62\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8c34b678c2f88f578beb13741d268596\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8c34b678c2f88f578beb13741d268596\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\7939df7942177bc8d8eb3719166db1f2\AndroidManifest.xml:20:5-44
@@ -341,8 +428,8 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Monica\
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\f3daeceaefcbea5ba4ad76acecde48cd\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\46dd88a1266949835e66f00af99affa5\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\46dd88a1266949835e66f00af99affa5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\751912e0d3bbc135e425b029a5858be3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\751912e0d3bbc135e425b029a5858be3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\ea85e5b86c4373074884dc78d05e6573\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\ea85e5b86c4373074884dc78d05e6573\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\916783d5d5c3df7df277967b6375b3d0\AndroidManifest.xml:20:5-44
@@ -357,6 +444,8 @@ MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Monica
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\f210aae0fe4bab45ba7edbf6ca97b644\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d436b9f6d3f31569bffedf3aa3eb70cf\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\d436b9f6d3f31569bffedf3aa3eb70cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\0b2d6ead1f95d533a3c82bf4556531ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\0b2d6ead1f95d533a3c82bf4556531ed\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\629ae2ba384593ce4ee05685f09f690b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\629ae2ba384593ce4ee05685f09f690b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\cf311f7c50299b430d71cbf30bdec8b8\AndroidManifest.xml:20:5-44
@@ -373,10 +462,12 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Monica\.gra
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\370bdcfc7cea5e50a7931c366708d3be\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\09768d1ac4890b08c398cc9226472941\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\09768d1ac4890b08c398cc9226472941\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\457ac76a0eda4361fd47a43bc257ea31\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\457ac76a0eda4361fd47a43bc257ea31\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\cdb5181e231ec7009e1018cd8abdccd1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\cdb5181e231ec7009e1018cd8abdccd1\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b912f49ead55694d9ce283e535857057\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b912f49ead55694d9ce283e535857057\AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\29ab104f1735572260560bea28460d2b\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\580831288549836273a297010d7909c5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\580831288549836273a297010d7909c5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\031010a97b225b2d13b85ae0f84165ff\AndroidManifest.xml:20:5-44
@@ -405,8 +496,6 @@ MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradl
 MERGED from [mil.nga.geopackage:geopackage-android:2.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\65ab6e70d5e101f0645162f462735b7c\AndroidManifest.xml:5:5-7:41
 INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
-	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Monica\Documents\smartmoving\app\src\main\AndroidManifest.xml
@@ -435,6 +524,44 @@ ADDED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\
 		ADDED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:27:9-33
 	android:name
 		ADDED from [org.osmdroid:osmdroid-android:6.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\deb9ed74b504f9ee26075985e3da0943\AndroidManifest.xml:26:9-45
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\aeb556ee17758e7aadc09a82e07913a8\AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:48:25-92
+receiver#com.facebook.CampaignTrackingReceiver
+ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:51:9-58:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:53:13-36
+	android:permission
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:54:13-69
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:52:13-65
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:55:13-57:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:56:17-79
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.13.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\e9aa650154b3df6af3c16a5057caca13\AndroidManifest.xml:56:25-76
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\dcc05dbbabdda528d8fecd625c8c725a\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
@@ -449,11 +576,3 @@ ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Monica\.g
 		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8c34b678c2f88f578beb13741d268596\AndroidManifest.xml:26:13-72
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\8c34b678c2f88f578beb13741d268596\AndroidManifest.xml:24:13-79
-meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\457ac76a0eda4361fd47a43bc257ea31\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\457ac76a0eda4361fd47a43bc257ea31\AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:28:13-35
-	android:name
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Monica\.gradle\caches\transforms-2\files-2.1\b72097cc2c95cae44e408caa815253c8\AndroidManifest.xml:27:13-51

@@ -4,4 +4,9 @@
     <string name="close">close</string>
     <string name="REPORTAR">reportar</string>
     <string name="permission">se necesita permiso de la ubicación</string>
+    <string name="facebook_app_id">2437912666486508</string>
+    <string name="fb_login_protocol_scheme">fb2437912666486508</string>
+    <integer name="google_play_services_version">12451000</integer>
+    <string name="no_result">no hay resultado</string>
+    <string name="choose_location_tag">elige</string>
 </resources>

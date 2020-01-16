@@ -1,7 +1,7 @@
 package smarttraffic.smartmoving.activities;
 
 
-import android.app.ProgressDialog;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,12 +12,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.security.ProviderInstaller;
 import com.wang.avi.AVLoadingIndicatorView;
 
 
-import butterknife.BindView;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+
+import javax.net.ssl.SSLContext;
+
 import butterknife.ButterKnife;
 import smarttraffic.smartmoving.Constants;
 import smarttraffic.smartmoving.R;
@@ -34,6 +41,17 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(
                 Constants.CLIENTE_DATA, Context.MODE_PRIVATE);
+        try {
+            // Google Play will install latest OpenSSL
+            ProviderInstaller.installIfNeeded(getApplicationContext());
+            SSLContext sslContext;
+            sslContext = SSLContext.getInstance("TLSv1.2");
+            sslContext.init(null, null, null);
+            sslContext.createSSLEngine();
+        } catch (GooglePlayServicesRepairableException | GooglePlayServicesNotAvailableException
+                | NoSuchAlgorithmException | KeyManagementException e) {
+            e.printStackTrace();
+        }
 
         AVLoadingIndicatorView avLoadingIndicatorView =new AVLoadingIndicatorView(MainActivity.this);
         avLoadingIndicatorView.setIndicator("BallSpinFadeLoader");

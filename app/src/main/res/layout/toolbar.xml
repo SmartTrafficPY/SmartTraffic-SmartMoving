@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    >
+
+
+    <EditText
+        android:id="@+id/searchDestinationEditText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"
+        android:cursorVisible="false"
+        android:visibility="visible"
+        android:imeOptions="actionDone"
+        android:hint="Buscar Camino" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:background="@drawable/search"/>
+
+</android.support.v7.widget.Toolbar>

@@ -13,3 +13,5 @@
 .externalNativeBuild
 
 app/src/main/java/smarttraffic/smartmoving/SMovingInitialToken.java
+
+app/src/main/java/smarttraffic/smartmoving/SmovingData.java

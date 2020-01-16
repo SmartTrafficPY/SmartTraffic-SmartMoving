@@ -4,7 +4,7 @@ public class SmartMovingProfile {
 
     private String birth_date;
     private String sex;
-    private Integer type_movement;
+    private Integer movement_type;
 
     public SmartMovingProfile(){
 
@@ -15,7 +15,7 @@ public class SmartMovingProfile {
       return "smartmovingprofile{" +
               "birth_date='" + birth_date + '\'' +
               ", sex='" + sex + '\'' +
-              ", type_movement='" + type_movement + '\'' +
+              ",movement_type='" + movement_type + '\'' +
               '}';
     }
     public String getBirth_date(){return birth_date; }
@@ -26,10 +26,10 @@ public class SmartMovingProfile {
     public void setSex(String sex) {this.sex = sex; }
 
     public Integer getTypemovement() {
-        return type_movement;
+        return movement_type;
     }
 
-    public void setTypemovement(Integer type_movement) {
-        this.type_movement = type_movement;
+    public void setTypemovement(Integer movement_type) {
+        this.movement_type = movement_type;
     }
 }

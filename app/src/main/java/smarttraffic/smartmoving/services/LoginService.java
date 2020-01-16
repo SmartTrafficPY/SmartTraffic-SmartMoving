@@ -74,7 +74,7 @@ public class LoginService extends IntentService {
                 editor.putString(Constants.USER_PASSWORD,
                         intent.getStringExtra("password")).apply();
                 editor.putInt(Constants.USER_ID, result.body().getIdFromUrl()).apply();
-                editor.commit();
+                editor.apply();
             }else if (result.code() == 400){
                 ResponseBody error = result.errorBody();
                 loginIntent.putExtra(PROBLEM, "No se puede iniciar sesión " +

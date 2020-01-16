@@ -46,9 +46,9 @@ public class RegistrationService extends IntentService {
                 .setLenient()
                 .create();
         final OkHttpClient okHttClient = new OkHttpClient.Builder()
-                .connectTimeout(20, TimeUnit.SECONDS)
-                .writeTimeout(20, TimeUnit.SECONDS)
-                .readTimeout(30, TimeUnit.SECONDS)
+                .connectTimeout(30, TimeUnit.SECONDS)
+                .writeTimeout(30, TimeUnit.SECONDS)
+                .readTimeout(40, TimeUnit.SECONDS)
                 .addInterceptor(new AddSMovingTokenInterceptor())
                 .build();
 
@@ -83,6 +83,9 @@ public class RegistrationService extends IntentService {
     private void setRegistrationExtras(Bundle extras, ProfileRegistry profileRegistry){
         profileRegistry.setUsername(extras.getString("username"));
         profileRegistry.setPassword(extras.getString("password"));
+        profileRegistry.setFirstname(extras.getString("first_name"));
+        profileRegistry.setLastname(extras.getString("last_name"));
+        profileRegistry.setEmail(extras.getString("email"));
         profileRegistry.getSmartMovingProfile().setBirth_date(extras.getString("birth_date"));
         profileRegistry.getSmartMovingProfile().setSex(extras.getString("sex"));
         profileRegistry.getSmartMovingProfile().setTypemovement(extras.getInt("type_movement"));

@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".activities.LoginActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background02"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background02"
+        tools:ignore="MissingConstraints"
+        android:paddingTop="25dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
 
         <TextView
             android:id="@+id/textView"
@@ -16,26 +26,27 @@
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
             android:text="SmartMoving"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:textAlignment="center"
             android:textColor="#805DA3"
-            android:textSize="50dp" />
+            android:textSize="30dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="219dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
             android:background="#00FFFFFF"
-            app:srcCompat="@drawable/smicono" />
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/smicono"
+            tools:ignore="MissingConstraints" />
+
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="340dp"
-            android:layout_height="58dp"
-            android:layout_margin="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
             android:background="#F1EEF5"
             android:ems="10"
             android:hint="username"
@@ -43,32 +54,27 @@
 
         <EditText
             android:id="@+id/passwlogin"
-            android:layout_width="342dp"
-            android:layout_height="58dp"
-            android:layout_margin="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
             android:background="#F1EEF5"
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:textColorHint="#9F100F13" />
 
-        <Button
-            android:id="@+id/btnlogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/btn_rectangle"
-            android:shadowColor="#C598CC"
-            android:text="Entrar"
-            android:textColor="#F7F1F3" />
+
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rectangle"
+                android:shadowColor="#C598CC"
+                android:text="Entrar"
+                android:layout_marginTop="25dp"
+                android:textColor="#F7F1F3" />
+
 
         <TextView
             android:id="@+id/linkSignUp"
@@ -76,9 +82,13 @@
             android:layout_height="wrap_content"
             android:background="#00E2E2E2"
             android:focusable="false"
+            android:layout_marginTop="25dp"
             android:text="Registrarse"
             android:textAlignment="center"
             android:textColor="#202972"
-            android:textIsSelectable="true" />
+            android:textIsSelectable="true"
+            tools:ignore="MissingConstraints" />
+
     </LinearLayout>
+</android.support.constraint.ConstraintLayout>
 

@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -94,7 +93,7 @@ public class ChangePasswActivity extends AppCompatActivity {
         changePassBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v(LOG_TAG, "User trying to change his password");
+
                 if (oldPassw.getText().toString().equals(userPassw)) {
                     changeProfileUser(sharedPreferences);
                 } else {
@@ -151,7 +150,7 @@ public class ChangePasswActivity extends AppCompatActivity {
                 public void onFailure(Call<ProfileUser> call, Throwable t) {
                     t.printStackTrace();
                     showToast(SERVER_MISTAQUE);
-                    Log.e(LOG_TAG, t.toString());
+
                 }
             });
         }

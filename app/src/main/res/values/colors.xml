@@ -10,6 +10,9 @@
     <color name="iron">#d3d3d3</color>
     <color name="red">#DF1C1C</color>
     <color name="gray">#345875</color>
+    <color name="green">#a4c639</color>
+    <color name="transparent">#FFFFFF</color>
+    <color name = "light">#52A5E7</color>
 
 
 </resources>

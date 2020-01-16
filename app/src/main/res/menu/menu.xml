@@ -3,12 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     >
-    <item android:id="@+id/changepassw"
-        android:title="Cambiar Contraseña"
-        android:icon="@drawable/ic_cached_black_24dp"/>
-
+    <item android:id="@+id/connectfacebook"
+        android:title="Conectar con Facebook"
+        />
+    <item android:id="@+id/connecttwiter"
+        android:title="Conectar con twitter"
+        />
+    <item android:id="@+id/configreports"
+        android:title="Configurar reportes"
+        />
     <item android:id="@+id/logoutbtn"
         android:title="Cerrar Sesion"
         android:icon="@drawable/logout"/>
-
 </menu>

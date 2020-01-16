@@ -34,14 +34,21 @@
 
     <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
         <item name="colorAccent">@color/white</item>
-        <item name="android:textColorPrimary">@color/iron</item>
-        <item name="android:background">@color/blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:background">@color/light</item>
     </style>
 
+    <style name="CalendarDatePickerDialog"  parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/light</item>
+        <item name="colorControlActivated">#33691e</item>
+        <item name="colorControlHighlight">#d50000</item>
+    </style>
     <style name="datepicker" parent="AppTheme.Dark.Dialog">
-        <item name="colorPrimary">@color/iron</item>
-        <item name="colorPrimaryDark">@color/white</item>
-        <item name="colorAccent">@color/primary_text</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/light</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">#33691e</item>
+        <item name="colorControlHighlight">#d50000</item>
     </style>
     <style name="TransparentProgressDialog" parent="android:Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -55,10 +62,11 @@
         <item name="android:background">@android:color/transparent</item>
     </style>
     <style name="date_picker_theme" parent="@android:style/Widget.DatePicker">
-        <item name="colorPrimary">@color/iron</item>
-        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/light</item>
+        <item name="colorPrimaryDark">@color/light</item>
         <item name="colorAccent">@color/primary_text</item>
     </style>
+
     <style name="HeaderBar">
         <item name="android:background">#303F9F</item>
     </style>
@@ -71,4 +79,6 @@
     </style>
 
     <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 </resources>

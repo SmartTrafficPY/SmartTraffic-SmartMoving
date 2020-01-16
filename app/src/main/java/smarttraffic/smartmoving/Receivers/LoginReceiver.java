@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import smarttraffic.smartmoving.R;
+import smarttraffic.smartmoving.activities.ConfigReportsActivity;
 import smarttraffic.smartmoving.activities.HomeActivity;
 import smarttraffic.smartmoving.services.LoginService;
 

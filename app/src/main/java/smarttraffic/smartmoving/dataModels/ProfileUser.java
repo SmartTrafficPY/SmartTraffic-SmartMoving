@@ -4,6 +4,9 @@ public class ProfileUser {
 
     private String url;
     private String username;
+    private String firstname;
+    private String lastname;
+    private String email;
     private SmartMovingProfile smartmovingprofile;
 
     public ProfileUser(){

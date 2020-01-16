@@ -2,23 +2,20 @@ package smarttraffic.smartmoving.activities;
 
 
 import android.app.DatePickerDialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -33,8 +30,6 @@ import android.widget.Toast;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.Calendar;
-import java.util.Random;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import smarttraffic.smartmoving.R;
@@ -46,6 +41,12 @@ public class RegisterActivity extends AppCompatActivity {
 
     @BindView(R.id.usernameSignUp)
     EditText usernameInput;
+    @BindView(R.id.firstname)
+    EditText firstnameInput;
+    @BindView(R.id.lastname)
+    EditText lastnameInput;
+    @BindView(R.id.email)
+    EditText emailInput;
     @BindView(R.id.birthDate)
     TextView birthDate;
     @BindView(R.id.passwordSignUp)
@@ -90,9 +91,8 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         setContentView(R.layout.register_layout);
-//        View _mw = getLayoutInflater().inflate(R.layout.register_layout, null);
-//        setContentView(_mw);
         ButterKnife.bind(this);
 
 
@@ -124,12 +124,7 @@ public class RegisterActivity extends AppCompatActivity {
                 createRegister();
             }
         });
-        /*goToLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gotoLoginActivity();
-            }
-        });*/
+
         passwordModeBtn.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
@@ -159,7 +154,7 @@ public class RegisterActivity extends AppCompatActivity {
     @RequiresApi(api= Build.VERSION_CODES.N)
     private void getDatePickedUp(){
 
-        DatePickerDialog datePickerDialog = new DatePickerDialog(this, R.style.date_picker_theme, new DatePickerDialog.OnDateSetListener() {
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, R.style.datepicker, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 final int mesActual = month + 1;
@@ -172,43 +167,34 @@ public class RegisterActivity extends AppCompatActivity {
         datePickerDialog.show();
     }
     private void createRegister(){
-        Log.d(LOG_TAG, "User trying to resgistry");
-        signInBtn.setEnabled(false);
+
         AVLoadingIndicatorView avLoadingIndicatorView=new AVLoadingIndicatorView(RegisterActivity.this);
         avLoadingIndicatorView.setIndicator("BallSpinFadeLoader");
         avLoadingIndicatorView.setIndicatorColor(R.color.white);
-        final ProgressDialog progressDialog = new ProgressDialog(RegisterActivity.this,
-                R.style.AppTheme_Dark_Dialog);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Creando el registro");
 
-        progressDialog.setContentView(avLoadingIndicatorView);
-
-        if(dataIsCorrectlyComplete()){
+        if(dataIsComplete()){
             sendRegistrationPetition();
-            progressDialog.show();
-            new android.os.Handler().postDelayed(new Runnable() {
-                public void run() {
-                    signInBtn.setEnabled(true);
-                    progressDialog.dismiss();
-                }
-            }, 3000);
         }
     }
 
     @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
-    private boolean dataIsCorrectlyComplete(){
+    private boolean dataIsComplete(){
 
             if(passwordInput.getText().toString().length() > 5){
-                if(maleRadButton.isChecked() || femaleRadButton.isChecked()){
-                    if(!birthDate.getText().toString().isEmpty()){
-                        return true;
-                    }else{
-                        showToast("Completar fecha de nacimiento!");
+                if(!emailInput.getText().toString().isEmpty()) {
+                    if (maleRadButton.isChecked() || femaleRadButton.isChecked()) {
+                        if (!birthDate.getText().toString().isEmpty()) {
+                            return true;
+                        } else {
+                            showToast("Completar fecha de nacimiento!");
+                            return false;
+                        }
+                    } else {
+                        showToast("Completar sexo");
                         return false;
                     }
                 }else{
-                    showToast("Completar sexo");
+                    showToast("Completar email");
                     return false;
                 }
             }else{
@@ -230,6 +216,9 @@ public class RegisterActivity extends AppCompatActivity {
     private void sendRegistrationPetition(){
         Intent registerIntent = new Intent(RegisterActivity.this, RegistrationService.class);
         registerIntent.putExtra("username", usernameInput.getText().toString());
+        registerIntent.putExtra("first_name", firstnameInput.getText().toString());
+        registerIntent.putExtra("last_name", lastnameInput.getText().toString());
+        registerIntent.putExtra("email", emailInput.getText().toString());
         registerIntent.putExtra("password", passwordInput.getText().toString());
         registerIntent.putExtra("birth_date", birthDate.getText().toString());
         if(onRadioButtonClickedSX() != null){

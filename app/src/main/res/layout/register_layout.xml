@@ -7,12 +7,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+    <ScrollView
+        android:id="@+id/scrollPartition1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contextClickable="true"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:scrollbars="none"
         >
-
+        <LinearLayout
+            android:id="@+id/lytPartition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#5CFFFFFF"
+            android:scrollbars="none">
         <ImageView
             android:layout_width="30dp"
             android:layout_height="34dp"
@@ -31,28 +45,52 @@
 
     <EditText
         android:id="@+id/usernameSignUp"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="username"
+        android:hint="username (Ej: lucigon)"
         android:inputType="textPersonName" />
 
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:hint="Nombre (opcional)"
+                android:inputType="textPersonName"
+                android:layout_alignParentRight="true" />
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="apellido (opcional)"
+        android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#060707" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/passwordSignUp"
-            android:layout_width="275dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="Crear Contraseña"
             android:inputType="textPassword" />
 
         <ImageButton
             android:id="@+id/btnshowpass"
-            android:layout_width="37dp"
-            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
@@ -64,8 +102,8 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="379dp"
-        android:layout_height="63dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/ageTextView"
@@ -90,14 +128,9 @@
 
         <ImageButton
             android:id="@+id/btndatepick"
-            android:layout_width="37dp"
-            android:layout_height="32dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="94dp"
-            android:layout_marginRight="94dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/birthDate"
             android:src="@drawable/datepicker" />
 
     </RelativeLayout>
@@ -114,31 +147,26 @@
 
     <RadioGroup
         android:id="@+id/sexRadioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <RadioButton
             android:id="@+id/maleRadButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Masculino" />
 
         <RadioButton
             android:id="@+id/femaleRadButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
-            android:layout_weight="1"
             android:text="Femenino" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/typemovementTextView"
-        android:layout_width="384dp"
-        android:layout_height="16dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Tipo de movilidad"
         android:textColor="#241E20"
         android:textStyle="bold" />
@@ -155,75 +183,57 @@
 
             <RadioButton
                 android:id="@+id/noneRadButton"
-                android:layout_width="169dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/typemovementradio"
-
-                android:layout_weight="1"
                 android:checked="true"
                 android:text="Otro" />
 
             <RadioButton
                 android:id="@+id/wheelchairRadButton"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Silla de ruedas" />
 
             <RadioButton
                 android:id="@+id/stickRadButton"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Baston" />
 
             <RadioButton
                 android:id="@+id/crutchRadButton"
-                android:layout_width="171dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Muletas" />
 
             <RadioButton
                 android:id="@+id/walkerRadButton"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Andador" />
 
             <RadioButton
                 android:id="@+id/babycarriageRadButton"
-                android:layout_width="174dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Carrito de bebe" />
 
 
         </RadioGroup>
 
     </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <Button
-        android:id="@+id/signUpButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/btn_rectangle"
-        android:text="Registrarse"
-        android:textColor="#F8F7F8" />
-
-        <Button
-            android:id="@+id/goToLogin"
-            android:layout_gravity="center"
-            android:layout_width="200dp"
-            android:layout_marginTop="25dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="#F8F7F8"
-            android:layout_toRightOf="@+id/signUpButton"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="Registrarse"/>
-    </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rectangle"
+                android:text="Registrarse"
+                android:textColor="#F8F7F8" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
