@@ -12,12 +12,20 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_item_powered_by_google.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_item_prediction.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\layout\\place_autocomplete_item_prediction.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_smile.png.flat",
@@ -34,6 +42,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_target.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\target.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -62,6 +74,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-hdpi-v4\\quantum_ic_arrow_back_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_changepass_menu.png.flat",
@@ -118,6 +134,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-hdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_smile.png.flat",
@@ -180,12 +200,12 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\b912f49ead55694d9ce283e535857057\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -204,6 +224,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\29ab104f1735572260560bea28460d2b\\res\\raw\\amu_nested_folders.kml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-hdpi-v4\\places_ic_clear.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_round_navigation_white_48.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xhdpi-v4\\round_navigation_white_48.png"
     },
@@ -213,7 +237,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_normal.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_norampyellow.png.flat",
@@ -222,6 +246,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_moreinfo_arrow_pressed.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable\\moreinfo_arrow_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xhdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_unevenroadred.png.flat",
@@ -244,16 +272,16 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\29ab104f1735572260560bea28460d2b\\res\\layout\\amu_text_bubble.xml"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -332,8 +360,16 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\aeb556ee17758e7aadc09a82e07913a8\\res\\layout\\com_facebook_login_fragment.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-mdpi-v4\\powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_dropdown_item_icons_2line.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_place_autocomplete_fragment.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\layout-v21\\place_autocomplete_fragment.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_obstacle.png.flat",
@@ -341,11 +377,19 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_fragment.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\layout\\places_autocomplete_fragment.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_error_text.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\layout\\places_autocomplete_error_text.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_sidewalkwarning.png.flat",
@@ -356,8 +400,16 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable-hdpi\\about_menu.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_progress.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\layout\\places_autocomplete_progress.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xxxhdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_show_motion_spec.xml.flat",
@@ -384,6 +436,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\29ab104f1735572260560bea28460d2b\\res\\raw\\amu_poly_style_boolean_alpha.kml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_clear_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-hdpi-v4\\quantum_ic_clear_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable\\abc_ic_search_api_material.xml"
     },
@@ -402,6 +458,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_clear_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxhdpi-v4\\quantum_ic_clear_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
@@ -424,6 +484,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search.xml.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_marker_default.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xxhdpi-v4\\marker_default.png"
     },
@@ -438,6 +502,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xxhdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -486,6 +554,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sad.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\sad.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_places_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-hdpi-v4\\places_powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_background_color.xml.flat",
@@ -540,6 +612,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\animator\\design_fab_hide_motion_spec.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xhdpi-v4\\places_powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable\\abc_textfield_search_material.xml"
     },
@@ -564,6 +640,14 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-hdpi-v4\\sharp_remove_black_36.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_item_powered_by_google.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\layout\\places_autocomplete_item_powered_by_google.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xhdpi-v4\\places_ic_clear.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
@@ -572,16 +656,16 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-mdpi\\stairredpoii.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_stairredpoii.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xhdpi\\stairredpoii.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_marker_default.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xxxhdpi-v4\\marker_default.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_stairredpoii.png.flat",
-        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xhdpi\\stairredpoii.png"
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
@@ -592,16 +676,20 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_snackbar_background.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\drawable\\mtrl_snackbar_background.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_snackbar_background.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\drawable\\mtrl_snackbar_background.xml"
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_places_autocomplete_toolbar_shadow.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable\\places_autocomplete_toolbar_shadow.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -628,12 +716,12 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_person.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-hdpi-v4\\person.png"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\drawable\\mtrl_tabs_default_indicator.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_person.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-hdpi-v4\\person.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -652,6 +740,14 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-mdpi\\unevenroadred.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xhdpi-v4\\powered_by_google_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_clear_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xhdpi-v4\\quantum_ic_clear_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_osm_ic_ic_map_ortho.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xxhdpi-v4\\osm_ic_ic_map_ortho.png"
     },
@@ -660,12 +756,16 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\color\\mtrl_tabs_ripple_color.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_search_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-mdpi-v4\\quantum_ic_search_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_wheelchairramp.png.flat",
@@ -685,15 +785,15 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\raw_amu_document_nest.kml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\29ab104f1735572260560bea28460d2b\\res\\raw\\amu_document_nest.kml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_wheelchairramp.png.flat",
@@ -840,6 +940,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_places_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-mdpi-v4\\places_powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\abc_cascading_menu_item_layout.xml"
     },
@@ -857,7 +961,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_bonuspack_bubble.xml.flat",
@@ -877,7 +981,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_circle.xml.flat",
@@ -888,12 +992,20 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xxxhdpi\\norampredpoii.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_smile1.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\smile1.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xhdpi-v4\\powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_background.xml.flat",
@@ -924,6 +1036,10 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xhdpi\\unevenroadred.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_target.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\target.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_about_menu.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable-xhdpi\\about_menu.png"
     },
@@ -942,6 +1058,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\raw_amu_cdata.kml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\29ab104f1735572260560bea28460d2b\\res\\raw\\amu_cdata.kml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxhdpi-v4\\quantum_ic_arrow_back_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
@@ -997,7 +1117,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_icon.xml.flat",
@@ -1040,6 +1160,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_places_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxhdpi-v4\\places_powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
@@ -1072,12 +1196,12 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\b912f49ead55694d9ce283e535857057\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_smile1.png.flat",
-        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\smile1.png"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_smile1.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\smile1.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1093,11 +1217,11 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circlered.xml.flat",
@@ -1173,7 +1297,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_focused.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_obstaclered.png.flat",
@@ -1213,7 +1337,15 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_focused.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_clear_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-mdpi-v4\\quantum_ic_clear_grey600_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-ldrtl-mdpi-v17\\quantum_ic_arrow_back_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
@@ -1236,12 +1368,20 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_register_layout.xml.flat",
-        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\layout\\register_layout.xml"
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search1.xml.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\layout\\activity_search1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xxhdpi-v4\\powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_action_bar_item_background_material.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_register_layout.xml.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\layout\\register_layout.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1252,24 +1392,24 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xxhdpi\\wheelchairramp.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_round_navigation_white_48.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xxhdpi-v4\\round_navigation_white_48.png"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_round_navigation_white_48.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xxhdpi-v4\\round_navigation_white_48.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\b912f49ead55694d9ce283e535857057\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_sad.png.flat",
-        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\sad.png"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_menu_overflow_material.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_sad.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\sad.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1296,12 +1436,20 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xxhdpi\\badsidewalkred.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xhdpi-v4\\places_powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\layout\\design_layout_snackbar.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\b912f49ead55694d9ce283e535857057\\res\\layout-v16\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-hdpi-v4\\powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_share.png.flat",
@@ -1316,12 +1464,16 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-hdpi\\handicon.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-hdpi-v4\\powered_by_google_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1373,7 +1525,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1401,7 +1553,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -1414,6 +1566,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_person.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-mdpi-v4\\person.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_target.xml.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\target.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1488,12 +1644,16 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\smile1.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_search_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xhdpi-v4\\quantum_ic_search_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logout_menu.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable-mdpi\\logout_menu.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1528,6 +1688,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_go.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\go.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_nosidewalkyellowpoi.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xxhdpi\\nosidewalkyellowpoi.png"
     },
@@ -1552,6 +1716,10 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\smile.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_clear_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxxhdpi-v4\\quantum_ic_clear_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_unevenroadred.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xxxhdpi\\unevenroadred.png"
     },
@@ -1561,7 +1729,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_osm_ic_ic_map_ortho.png.flat",
@@ -1572,12 +1740,12 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\b912f49ead55694d9ce283e535857057\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_light.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable\\tooltip_frame_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -1592,6 +1760,10 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable-hdpi\\changepass_menu.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_places_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-hdpi-v4\\places_powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\aeb556ee17758e7aadc09a82e07913a8\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
     },
@@ -1602,6 +1774,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-mdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_resetclose.png.flat",
@@ -1664,6 +1840,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xhdpi-v4\\quantum_ic_arrow_back_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_alerticon.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\alerticon.png"
     },
@@ -1712,12 +1892,16 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\aeb556ee17758e7aadc09a82e07913a8\\res\\drawable-mdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxxhdpi-v4\\quantum_ic_arrow_back_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_search.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\search.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1761,7 +1945,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
@@ -1813,7 +1997,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_arrowright.png.flat",
@@ -1944,6 +2128,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\cdb5181e231ec7009e1018cd8abdccd1\\res\\layout\\notification_media_action.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_main_fullscreen.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\layout\\places_autocomplete_main_fullscreen.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_background_cache_hint_selector_material_light.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
     },
@@ -1961,7 +2149,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1969,11 +2157,15 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_checkclip.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\checkclip.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_target.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\target.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_mylocation.png.flat",
@@ -2008,6 +2200,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\b912f49ead55694d9ce283e535857057\\res\\drawable\\notification_icon_background.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_places_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxhdpi-v4\\places_powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_check.xml.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\check.xml"
     },
@@ -2032,8 +2228,16 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_target.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\target.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-ldrtl-hdpi-v17\\quantum_ic_arrow_back_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -2042,6 +2246,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_smoving_notify.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xxxhdpi\\smoving_notify.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-ldrtl-xxhdpi-v17\\quantum_ic_arrow_back_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
@@ -2053,7 +2261,11 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_quantum_ic_cloud_off_vd_theme_24.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable\\quantum_ic_cloud_off_vd_theme_24.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_black.xml.flat",
@@ -2066,6 +2278,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_norampyellow.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-mdpi\\norampyellow.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-mdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar.xml.flat",
@@ -2097,11 +2313,11 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_carinsidewalk.png.flat",
@@ -2169,7 +2385,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_normal.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
@@ -2208,6 +2424,14 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_search_bar.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\layout\\places_autocomplete_search_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-mdpi-v4\\powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\b912f49ead55694d9ce283e535857057\\res\\drawable\\notification_bg_low.xml"
     },
@@ -2222,6 +2446,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xxxhdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_send_background.xml.flat",
@@ -2242,6 +2470,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_go.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\go.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_osm_ic_follow_me.png.flat",
@@ -2289,7 +2521,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -2329,7 +2561,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_disabled.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -2393,7 +2625,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -2413,7 +2645,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_disabled.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
@@ -2528,6 +2760,14 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_places_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxxhdpi-v4\\places_powered_by_google_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_search_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-hdpi-v4\\quantum_ic_search_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_osm_ic_center_map.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xxhdpi-v4\\osm_ic_center_map.png"
     },
@@ -2560,12 +2800,20 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xhdpi\\norampredpoii.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_places_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxxhdpi-v4\\places_powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_osm_ic_center_map.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-hdpi-v4\\osm_ic_center_map.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_main_overlay.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\layout\\places_autocomplete_main_overlay.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -2604,6 +2852,10 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_search_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxxhdpi-v4\\quantum_ic_search_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_check.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\check.png"
     },
@@ -2632,6 +2884,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xxhdpi-v4\\places_ic_search.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_osm_ic_follow_me_on.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xxxhdpi-v4\\osm_ic_follow_me_on.png"
     },
@@ -2640,8 +2896,16 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_progress.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\layout\\place_autocomplete_progress.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_logout_menu.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable-xxxhdpi\\logout_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-mdpi-v4\\quantum_ic_arrow_back_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -2677,23 +2941,27 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\raw_amu_default_balloon.kml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\29ab104f1735572260560bea28460d2b\\res\\raw\\amu_default_balloon.kml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_item_prediction.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\layout\\places_autocomplete_item_prediction.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_nosidewalkredpoii.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xxhdpi\\nosidewalkredpoii.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_sharp_add_black_36.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-mdpi-v4\\sharp_add_black_36.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
@@ -2702,6 +2970,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color_design_tint_password_toggle.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_target.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\target.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -2742,6 +3014,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_nosidewalkyellowpoi.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\mipmap-xxxhdpi\\nosidewalkyellowpoi.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xxhdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_nosidewalkyellowpoi.png.flat",
@@ -2836,12 +3112,20 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_go.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\go.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\raw_places_keep.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\raw\\places_keep.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_sharp_remove_black_36.png.flat",
@@ -2857,7 +3141,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_dark.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -2972,6 +3256,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-mdpi-v4\\osm_ic_ic_map_ortho.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_go.xml.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\go.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
@@ -2989,7 +3277,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_light.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\color\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
@@ -3036,6 +3324,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_fragment.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\layout\\place_autocomplete_fragment.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\raw_amu_inline_style.kml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\29ab104f1735572260560bea28460d2b\\res\\raw\\amu_inline_style.kml"
     },
@@ -3068,8 +3360,12 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable-mdpi\\smicono.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\4b33919d162fceefb9898e3957895618\\res\\drawable-xxxhdpi-v4\\places_ic_clear.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -3077,7 +3373,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_datepicker.png.flat",
@@ -3141,7 +3437,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -3158,6 +3454,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_places_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-mdpi-v4\\places_powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -3177,7 +3477,11 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-ldrtl-xxxhdpi-v17\\quantum_ic_arrow_back_grey600_24.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -3194,6 +3498,14 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_chip_state_list_anim.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\64bdd1cb547177d39e13a4198a668c99\\res\\animator\\mtrl_chip_state_list_anim.xml"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_search_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-xxhdpi-v4\\quantum_ic_search_grey600_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_go.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\go.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_nosidewalkyellowpoi.png.flat",
@@ -3217,7 +3529,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_carinsidewalk.png.flat",
@@ -3269,7 +3581,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_tint.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\color\\common_google_signin_btn_tint.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -3312,6 +3624,10 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_quantum_ic_arrow_back_grey600_24.png.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-ldrtl-xhdpi-v17\\quantum_ic_arrow_back_grey600_24.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_send_icon_white.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\720377ecb155e853d9fa189aa3691c1d\\res\\drawable-mdpi-v4\\com_facebook_button_send_icon_white.png"
     },
@@ -3337,7 +3653,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_background.xml.flat",
@@ -3376,24 +3692,28 @@
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_target.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\target.png"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logout.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\logout.png"
     },
     {
-        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_person.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\deb9ed74b504f9ee26075985e3da0943\\res\\drawable-xhdpi-v4\\person.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\d5da48fa2276a6ee83d445893ce50b62\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
@@ -3413,7 +3733,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_datepicker.png.flat",
@@ -3485,7 +3805,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_sidewalkwarning.png.flat",
@@ -3537,7 +3857,7 @@
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_normal.xml.flat",
-        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\8c34b678c2f88f578beb13741d268596\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+        "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\7e0a565cb15517efcbde9a57c7d02f79\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -3550,6 +3870,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_logout.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\logout.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_go.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\go.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
@@ -3566,6 +3890,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_smile.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\smile.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_go.png.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\go.png"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",

@@ -18,43 +18,63 @@
 
     <uses-feature android:name="android.hardware.location.gps" />
     <uses-feature android:name="android.hardware.location.network" />
+
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
 
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@drawable/smicono"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/smicono"
         android:supportsRtl="true"
-        android:debuggable="true"
         android:theme="@style/MyAppTheme"
-        tools:replace="android:allowBackup"
-        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode">
-        <provider android:authorities="com.facebook.app.FacebookContentProvider2437912666486508"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode"
+        tools:replace="android:allowBackup">
+        <activity android:name=".activities.SearchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.SmartMoving"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smarttraffic.smartmoving.activities.MainActivity" />
+
+
+        </activity>
+
+        <provider
             android:name="com.facebook.FacebookContentProvider"
-            android:exported="true"/>
+            android:authorities="com.facebook.app.FacebookContentProvider2437912666486508"
+            android:exported="true" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-            <data android:scheme="@string/fb_login_protocol_scheme" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activities.MainActivity"
             android:theme="@style/AppTheme.SmartMoving">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -72,7 +92,7 @@
                 android:value="smarttraffic.smartmoving.activities.MainActivity" />
         </activity>
         <activity
-            android:name="smarttraffic.smartmoving.activities.ConfigReportsActivity"
+            android:name=".activities.ConfigReportsActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.SmartMoving"
             android:windowSoftInputMode="stateHidden">
@@ -95,7 +115,6 @@
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.SmartMoving"
             android:windowSoftInputMode="stateHidden">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="smarttraffic.smartmoving.activities.MainActivity" />
@@ -138,6 +157,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="smarttraffic.smartmoving.activities.HomeActivity" />
         </activity>
+
+
     </application>
 
 </manifest>

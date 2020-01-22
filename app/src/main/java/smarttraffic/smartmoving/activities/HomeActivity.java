@@ -3,6 +3,7 @@ package smarttraffic.smartmoving.activities;
 
 
 import android.Manifest;
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -34,6 +35,7 @@ import android.support.v7.view.ActionMode;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.DragEvent;
 import android.view.Gravity;
 
 import android.view.Menu;
@@ -61,9 +63,13 @@ import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.SettingsClient;
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.j256.ormlite.stmt.query.In;
 
 import org.osmdroid.api.IGeoPoint;
 import org.osmdroid.api.IMapController;
@@ -87,7 +93,6 @@ import org.osmdroid.views.overlay.gestures.RotationGestureOverlay;
 import org.osmdroid.views.overlay.infowindow.MarkerInfoWindow;
 import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider;
 import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -184,8 +189,19 @@ public class HomeActivity extends AppCompatActivity  {
     TextView textV8;
     @BindView(R.id.searchDestinationEditText)
     EditText searchdestination;
-    @BindView(R.id.search)
-    ImageButton searchButton;
+    @BindView(R.id.startnav)
+    ImageButton startNav;
+    @BindView(R.id.cancelnav)
+    ImageButton cancelNav;
+    @BindView(R.id.tv1)
+    TextView tv1;
+    @BindView(R.id.tv2)
+    TextView tv2;
+    @BindView(R.id.tv3)
+    TextView tv3;
+    @BindView(R.id.markerdestination)
+    ImageView markerDestination;        
+
 
     int carp, badsidewp, unevenp, obstaclp, pendp, stairp, nosdwp, normpp;
 
@@ -220,8 +236,9 @@ public class HomeActivity extends AppCompatActivity  {
     HashMap<Integer, String> lastupt = new HashMap<Integer, String>();
     //RoadManager roadManager = new OSRMRoadManager(this);
     ArrayList<GeoPoint> waypoints = new ArrayList<GeoPoint>();
-    Marker markerToShare;
-
+    Marker markerToShare = null;
+    GeoPoint destination = null;
+    Boolean banddestination = false;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -236,7 +253,7 @@ public class HomeActivity extends AppCompatActivity  {
         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(
                 Constants.REPORTS_POI, Context.MODE_PRIVATE);
         //sharedPreferences.getAll().clear();
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         hideKeyboard(HomeActivity.this);
         if (savedInstanceState == null) {
@@ -247,37 +264,7 @@ public class HomeActivity extends AppCompatActivity  {
             counter = savedInstanceState.getInt("value", 0); //here zero is the default value
 
         }
-            if (sharedPreferences.getAll().isEmpty()) {
-
-                carp = R.mipmap.carinsidewalk;
-                pendp = R.mipmap.pendiente;
-                badsidewp = R.mipmap.sidewalkwarning;
-                obstaclp = R.mipmap.obstacle;
-                unevenp = R.mipmap.uneven;
-                stairp = R.mipmap.stairredpoii;
-                nosdwp = R.mipmap.nosidewalkredpoii;
-                normpp = R.mipmap.norampredpoii;
-
-            } else {
-
-                carp = sharedPreferences.getInt("CAR", 0);
-                carBtnPoi.setBackgroundResource(carp);
-                pendp = sharedPreferences.getInt("PENDT", 0);
-                pendienteBtnPoi.setBackgroundResource(pendp);
-                badsidewp = sharedPreferences.getInt("BADS", 0);
-                sidewalkBtnPoi.setBackgroundResource(badsidewp);
-                obstaclp = sharedPreferences.getInt("OBSTC", 0);
-                obstacleBtnPoi.setBackgroundResource(obstaclp);
-                unevenp = sharedPreferences.getInt("UNEV", 0);
-                streetBtnPoi.setBackgroundResource(unevenp);
-                stairp = sharedPreferences.getInt("STAIR", 0);
-                stairpoi.setBackgroundResource(stairp);
-                nosdwp = sharedPreferences.getInt("NOSW", 0);
-                nosidewalkpoi.setBackgroundResource(nosdwp);
-                normpp = sharedPreferences.getInt("NORMP", 0);
-                noramppoi.setBackgroundResource(normpp);
-
-            }
+            saveMarkersConfig(sharedPreferences);
             //noinspection ConstantConditions
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
@@ -292,7 +279,7 @@ public class HomeActivity extends AppCompatActivity  {
 
             final DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
 
-            if (getIntent().getExtras()!= null) {
+            if (getIntent().hasExtra("carBtnPoi")) {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 carBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("carBtnPoi"));
                 carp = getIntent().getExtras().getInt("carBtnPoi");
@@ -361,6 +348,71 @@ public class HomeActivity extends AppCompatActivity  {
                     hideKeyboard(HomeActivity.this);
                 }
             });
+            searchdestination.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                    Intent i = new Intent(HomeActivity.this, SearchActivity.class);
+                    startActivity(i);
+                    hideKeyboard(HomeActivity.this);
+                    return false;
+                }
+            });
+            startNav.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    toolbar.setVisibility(View.VISIBLE);
+                    scrollView.setVisibility(View.VISIBLE);
+                    startNav.setVisibility(View.INVISIBLE);
+                    cancelNav.setVisibility(View.INVISIBLE);
+                }
+            });
+            cancelNav.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    toolbar.setVisibility(View.VISIBLE);
+                    scrollView.setVisibility(View.VISIBLE);
+                    scrollView.setVisibility(View.VISIBLE);
+                    startNav.setVisibility(View.INVISIBLE);
+                    cancelNav.setVisibility(View.INVISIBLE);
+                    banddestination=false;
+                }
+            });
+
+        if(getIntent().hasExtra("latt")) {
+            toolbar.setVisibility(View.INVISIBLE);
+            scrollView.setVisibility(View.INVISIBLE);
+            startNav.setVisibility(View.VISIBLE);
+            cancelNav.setVisibility(View.VISIBLE);
+
+
+            //GeoPoint newdes = new GeoPoint(getIntent().getExtras().getDouble("latt"),getIntent().getExtras().getDouble("longg"));
+            //Marker mmarker = new Marker(mMapView);
+            //Marker markerToShare = new Marker(mMapView);
+            banddestination = true;
+           // mmarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+            //markerToShare.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+          //  mmarker.setPosition(newdes);
+           // markerToShare.setPosition(newdes);
+         //   mmarker.setIcon(getResources().getDrawable(R.drawable.target));
+           // markerToShare.setIcon(getResources().getDrawable(R.drawable.target));
+            markerDestination.setVisibility(View.VISIBLE);
+            mMapView.getOverlays().add(markerToShare);
+            mLocationOverlay.disableFollowLocation();
+            mMapView.invalidate();
+            CameraPosition aCameraPosition = new CameraPosition.Builder().target(
+                    new LatLng(getIntent().getExtras().getDouble("latt"), getIntent().getExtras().getDouble("longg"))).zoom(15).build();
+            //mMapView.setAnimation(CameraUpdateFactory.newCameraPosition(aCameraPosition));
+            final IGeoPoint mapCenter =new GeoPoint(getIntent().getExtras().getDouble("latt"), getIntent().getExtras().getDouble("longg"));
+
+            mMapView.getController().setCenter(mapCenter);
+            //mMapView.getMapCenter(newdes);
+            //mLocationOverlay.disableFollowLocation();
+            mMapView.invalidate();
+        }
+
+
+
 
 
             final ImageButton.OnClickListener olongBtn = new View.OnClickListener() {
@@ -373,7 +425,9 @@ public class HomeActivity extends AppCompatActivity  {
                     sharereport.setVisibility(View.VISIBLE);
                     confirmReport.setVisibility(View.VISIBLE);
                     deleteReport.setVisibility(View.VISIBLE);
-
+                    tv1.setVisibility(View.VISIBLE);
+                    tv2.setVisibility(View.VISIBLE);
+                    tv3.setVisibility(View.VISIBLE);
                     switch (v.getId()) {
                         case R.id.curbramppoi:
                             createMarker(R.mipmap.wheelchairramp);
@@ -429,16 +483,19 @@ public class HomeActivity extends AppCompatActivity  {
                     }
                 }
             };
-            searchButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    hideKeyboard(HomeActivity.this);
-                }
-            });
+
             searchdestination.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                 @Override
                 public void onFocusChange(View view, boolean b) {
 
+                }
+            });
+            mMapView.setOnDragListener(new View.OnDragListener() {
+                @Override
+                public boolean onDrag(View view, DragEvent dragEvent) {
+
+
+                    return false;
                 }
             });
 
@@ -481,6 +538,39 @@ public class HomeActivity extends AppCompatActivity  {
             view = new View(activity);
         }
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
+    public void saveMarkersConfig(SharedPreferences sharedPreferences){
+        if (sharedPreferences.getAll().isEmpty()) {
+
+            carp = R.mipmap.carinsidewalk;
+            pendp = R.mipmap.pendiente;
+            badsidewp = R.mipmap.sidewalkwarning;
+            obstaclp = R.mipmap.obstacle;
+            unevenp = R.mipmap.uneven;
+            stairp = R.mipmap.stairredpoii;
+            nosdwp = R.mipmap.nosidewalkredpoii;
+            normpp = R.mipmap.norampredpoii;
+
+        } else {
+
+            carp = sharedPreferences.getInt("CAR", 0);
+            carBtnPoi.setBackgroundResource(carp);
+            pendp = sharedPreferences.getInt("PENDT", 0);
+            pendienteBtnPoi.setBackgroundResource(pendp);
+            badsidewp = sharedPreferences.getInt("BADS", 0);
+            sidewalkBtnPoi.setBackgroundResource(badsidewp);
+            obstaclp = sharedPreferences.getInt("OBSTC", 0);
+            obstacleBtnPoi.setBackgroundResource(obstaclp);
+            unevenp = sharedPreferences.getInt("UNEV", 0);
+            streetBtnPoi.setBackgroundResource(unevenp);
+            stairp = sharedPreferences.getInt("STAIR", 0);
+            stairpoi.setBackgroundResource(stairp);
+            nosdwp = sharedPreferences.getInt("NOSW", 0);
+            nosidewalkpoi.setBackgroundResource(nosdwp);
+            normpp = sharedPreferences.getInt("NORMP", 0);
+            noramppoi.setBackgroundResource(normpp);
+
+        }
     }
 
 
@@ -792,6 +882,7 @@ public class HomeActivity extends AppCompatActivity  {
         deleteReport.setVisibility(View.INVISIBLE);
         confirmReport.setVisibility(View.INVISIBLE);
         sharereport.setVisibility(View.INVISIBLE);
+        tv1.setVisibility(View.INVISIBLE);tv2.setVisibility(View.INVISIBLE);tv3.setVisibility(View.INVISIBLE);
         showToast1();
         scrollView.setVisibility(View.VISIBLE);
         mMapView.invalidate();
@@ -812,6 +903,7 @@ public class HomeActivity extends AppCompatActivity  {
             deleteReport.setVisibility(View.INVISIBLE);
             sharereport.setVisibility(View.INVISIBLE);
             confirmReport.setVisibility(View.INVISIBLE);
+            tv1.setVisibility(View.INVISIBLE);tv2.setVisibility(View.INVISIBLE);tv3.setVisibility(View.INVISIBLE);
 
         }else{
             showToast();
@@ -997,7 +1089,7 @@ public class HomeActivity extends AppCompatActivity  {
     @Override
     protected void onResume() {
         super.onResume();
-        mMapView.onResume();
+        //mMapView.onResume();
     }
     @Override
     protected void onPause() {

@@ -16,13 +16,9 @@
         android:background="#E0E0E0"
         android:cursorVisible="false"
         android:visibility="visible"
+        android:focusableInTouchMode="false"
         android:imeOptions="actionDone"
-        android:hint="Buscar Camino" />
+        android:hint="Buscar Destino" />
 
-    <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/search"
-        android:background="@drawable/search"/>
 
 </android.support.v7.widget.Toolbar>

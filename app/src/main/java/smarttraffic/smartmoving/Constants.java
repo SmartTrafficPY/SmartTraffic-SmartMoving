@@ -17,7 +17,7 @@ public class Constants {
     private static final long SECONDS_IN_MILLISECONDS = 1000 * 1;
     private static final long MINUTES_IN_MILLISECONDS = SECONDS_IN_MILLISECONDS * 60;
     private static final long HOURS_IN_MILLISECONDS = MINUTES_IN_MILLISECONDS * 60;
-    public static final String BASE_URL_HOME = "http://192.168.0.6:8000/api/";
+    public static final String BASE_URL_HOME = "http://192.168.1.253:8000/api/";
     public static final String BASE_URL = "https://api.smarttraffic.com.py/api/";
     public static final String TILE_SERVER = "https://api.smarttraffic.com.py/tile/";
     private static final String CHANNEL_ID = "SMARTMOVING_CHANNEL_ID";
