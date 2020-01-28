@@ -3,12 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     >
-    <item android:id="@+id/connectfacebook"
-        android:title="Conectar con Facebook"
-        />
-    <item android:id="@+id/connecttwiter"
-        android:title="Conectar con twitter"
-        />
     <item android:id="@+id/configreports"
         android:title="Configurar reportes"
         />

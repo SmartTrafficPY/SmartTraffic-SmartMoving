@@ -13,11 +13,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Camera;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -26,8 +29,6 @@ import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -38,21 +39,24 @@ import android.util.Log;
 import android.view.DragEvent;
 import android.view.Gravity;
 
+import android.view.LayoutInflater;
 import android.view.Menu;
 
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.AbsListView;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -63,20 +67,23 @@ import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.SettingsClient;
-import com.google.android.gms.maps.CameraUpdate;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.j256.ormlite.stmt.query.In;
+import com.google.maps.android.SphericalUtil;
 
 import org.osmdroid.api.IGeoPoint;
 import org.osmdroid.api.IMapController;
-//import org.osmdroid.bonuspack.routing.OSRMRoadManager;
-//import org.osmdroid.bonuspack.routing.RoadManager;
+import org.osmdroid.bonuspack.routing.OSRMRoadManager;
+import org.osmdroid.bonuspack.routing.Road;
+import org.osmdroid.bonuspack.routing.RoadManager;
 import org.osmdroid.config.Configuration;
 import org.osmdroid.config.IConfigurationProvider;
+import org.osmdroid.gpkg.overlay.OsmMapShapeConverter;
+import org.osmdroid.gpkg.overlay.features.PolylineOptions;
+import org.osmdroid.tileprovider.TileStates;
 import org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.util.MapTileIndex;
@@ -93,9 +100,12 @@ import org.osmdroid.views.overlay.gestures.RotationGestureOverlay;
 import org.osmdroid.views.overlay.infowindow.MarkerInfoWindow;
 import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider;
 import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay;
+
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import java.util.HashMap;
@@ -105,6 +115,7 @@ import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Optional;
 import okhttp3.Headers;
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
@@ -124,8 +135,9 @@ import smarttraffic.smartmoving.dataModels.Reports.CreateReportPoi;
 import smarttraffic.smartmoving.dataModels.Reports.Properties;
 import smarttraffic.smartmoving.dataModels.Reports.ReportPoi;
 import smarttraffic.smartmoving.dataModels.Reports.ReportsList;
-
-import static android.widget.AbsListView.OnScrollListener.SCROLL_STATE_IDLE;
+import smarttraffic.smartmoving.dataModels.navigations.CreateNavigationRequest;
+import smarttraffic.smartmoving.dataModels.navigations.NavigationRequest;
+import smarttraffic.smartmoving.dataModels.navigations.Rquest;
 
 
 public class HomeActivity extends AppCompatActivity  {
@@ -140,6 +152,8 @@ public class HomeActivity extends AppCompatActivity  {
     private static final String LOG_TAG ="HomeActivity";
     private Marker userMarker;
     private CompassOverlay mCompassOverlay;
+    String severes = null;
+    String lights =  null;
 
     @BindView(R.id.mapview)
     MapView mMapView;
@@ -200,7 +214,11 @@ public class HomeActivity extends AppCompatActivity  {
     @BindView(R.id.tv3)
     TextView tv3;
     @BindView(R.id.markerdestination)
-    ImageView markerDestination;        
+    ImageView markerDestination;
+    @BindView(R.id.linearlayout)
+    LinearLayout toolbarnav;
+    @BindView(R.id.cancelnavigation)
+    ImageView cancelNavBtn;
 
 
     int carp, badsidewp, unevenp, obstaclp, pendp, stairp, nosdwp, normpp;
@@ -236,9 +254,15 @@ public class HomeActivity extends AppCompatActivity  {
     HashMap<Integer, String> lastupt = new HashMap<Integer, String>();
     //RoadManager roadManager = new OSRMRoadManager(this);
     ArrayList<GeoPoint> waypoints = new ArrayList<GeoPoint>();
+    Polyline polyline = new Polyline();
     Marker markerToShare = null;
     GeoPoint destination = null;
     Boolean banddestination = false;
+    String nodeinit= "";
+    String nodeend="";
+    ArrayList<String> sendseveres=new ArrayList<>();
+    ArrayList<String> sendlights=new ArrayList<>();
+
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -247,14 +271,24 @@ public class HomeActivity extends AppCompatActivity  {
         setContentView(R.layout.home_layout);
         Utils.setTileServerCredentials(this);
         ButterKnife.bind(this);
-        setReportsPoiOnMap();
+
+        //setReportsPoiOnMap();
         setMapView();
+        setReportsPoiOnMap();
         mActivityRecognitionClient = new ActivityRecognitionClient(this);
+
         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(
                 Constants.REPORTS_POI, Context.MODE_PRIVATE);
+        final SharedPreferences sharedSevere = getApplicationContext().getSharedPreferences(
+                Constants.REPORT_SERVERE  ,Context.MODE_PRIVATE      );
+        final SharedPreferences sharefLight = getApplicationContext().getSharedPreferences(
+                Constants.REPORT_LIGHT,Context.MODE_PRIVATE );
         //sharedPreferences.getAll().clear();
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("");
+        toolbar.setVisibility(View.VISIBLE);
+
         hideKeyboard(HomeActivity.this);
         if (savedInstanceState == null) {
             //it is the first time the fragment is being called
@@ -277,33 +311,103 @@ public class HomeActivity extends AppCompatActivity  {
             //File tileCache = new File(osmConf.getOsmdroidBasePath().getAbsolutePath(), "tile");
             //osmConf.setOsmdroidTileCache(tileCache);
 
-            final DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+            //final DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+            severes = sharedSevere.getAll().toString();
+            lights = sharefLight.getAll().toString();
+            String[] severee = severes.split(", ,");
+            String[] lightt = lights.split(", ,");
+        if(severee.length>2) {
+            for (int i = 0; i < severee.length; i++) {
+                String id = severee[i];
+                String[] id1 = id.split("=");
+                String idd = id1[1];
+                idd =idd.replace(", }","");
+                sendseveres.add(idd);
 
-            if (getIntent().hasExtra("carBtnPoi")) {
+            }
+        }else{
+            sendseveres.add("0");
+        }
+        if(lightt.length>2) {
+            for (int i = 0; i < severee.length; i++) {
+                String id = lightt[i];
+                String[] id1 = id.split("=");
+                String idd = id1[1];
+                idd =idd.replace(", }","");
+                sendlights.add(idd);
+
+            }
+        }else{
+            sendlights.add("0");
+        }
+            if (getIntent().hasExtra("carBtnPoiY") || getIntent().hasExtra("carBtnPoiR")) {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                carBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("carBtnPoi"));
-                carp = getIntent().getExtras().getInt("carBtnPoi");
+
+                if(getIntent().hasExtra("carBtnPoiY")){
+                    carBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("carBtnPoiY"));
+                    carp = getIntent().getExtras().getInt("carBtnPoiY");
+                }else{
+                    carBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("carBtnPoiR"));
+                    carp = getIntent().getExtras().getInt("carBtnPoiR");
+                }
+                if(getIntent().hasExtra("pendienteBtnPoiY")){
+                    pendienteBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("pendienteBtnPoiY"
+                    ));
+                    pendp = getIntent().getExtras().getInt("pendienteBtnPoiY");
+                }else{
+                    pendienteBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("pendienteBtnPoiR"));
+                    pendp = getIntent().getExtras().getInt("pendienteBtnPoiR");
+                }
+                if(getIntent().hasExtra("sidewalkBtnPoiY")){
+                    sidewalkBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("sidewalkBtnPoiY"));
+                    badsidewp = getIntent().getExtras().getInt("sidewalkBtnPoiY");
+                }else{
+                    sidewalkBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("sidewalkBtnPoiR"));
+                    badsidewp = getIntent().getExtras().getInt("sidewalkBtnPoiR");
+                }
+                if(getIntent().hasExtra("obstacleBtnPoiY")){
+                    obstacleBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("obstacleBtnPoiY"));
+                    obstaclp = getIntent().getExtras().getInt("obstacleBtnPoiY");
+                }else{
+                    obstacleBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("obstacleBtnPoiR"));
+                    obstaclp = getIntent().getExtras().getInt("obstacleBtnPoiR");
+                }
+                if(getIntent().hasExtra("streetBtnPoiY")){
+                    streetBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("streetBtnPoiY"));
+                    unevenp = getIntent().getExtras().getInt("streetBtnPoiY");
+
+                }else{
+                    streetBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("streetBtnPoiR"));
+                    unevenp = getIntent().getExtras().getInt("streetBtnPoiR");
+                }
+                if(getIntent().hasExtra("stairpoiY")){
+                    stairpoi.setBackgroundResource(getIntent().getExtras().getInt("stairpoiY"));
+                    stairp = getIntent().getExtras().getInt("stairpoiY");
+                }else{
+                    stairpoi.setBackgroundResource(getIntent().getExtras().getInt("stairpoiR"));
+                    stairp = getIntent().getExtras().getInt("stairpoiR");
+                }
+                if(getIntent().hasExtra("nosidewalkpoiY")){
+                    nosidewalkpoi.setBackgroundResource(getIntent().getExtras().getInt("nosidewalkpoiY"));
+                    nosdwp = getIntent().getExtras().getInt("nosidewalkpoiY");
+                }else{
+                    nosidewalkpoi.setBackgroundResource(getIntent().getExtras().getInt("nosidewalkpoiR"));
+                    nosdwp = getIntent().getExtras().getInt("nosidewalkpoiR");
+                }
+                if(getIntent().hasExtra("noramppoiY")){
+                    noramppoi.setBackgroundResource(getIntent().getExtras().getInt("noramppoiY"));
+                    normpp = getIntent().getExtras().getInt("noramppoiY");
+                }else{
+                    noramppoi.setBackgroundResource(getIntent().getExtras().getInt("noramppoiR"));
+                    normpp = getIntent().getExtras().getInt("noramppoiR");
+                }
                 editor.putInt("CAR", carp);
-                pendienteBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("pendienteBtnPoi"));
-                pendp = getIntent().getExtras().getInt("pendienteBtnPoi");
                 editor.putInt("PENDT", pendp);
-                sidewalkBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("sidewalkBtnPoi"));
-                badsidewp = getIntent().getExtras().getInt("sidewalkBtnPoi");
                 editor.putInt("BADS", badsidewp);
-                obstacleBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("obstacleBtnPoi"));
-                obstaclp = getIntent().getExtras().getInt("obstacleBtnPoi");
                 editor.putInt("OBSTC", obstaclp);
-                streetBtnPoi.setBackgroundResource(getIntent().getExtras().getInt("streetBtnPoi"));
-                unevenp = getIntent().getExtras().getInt("streetBtnPoi");
                 editor.putInt("UNEV", unevenp);
-                stairpoi.setBackgroundResource(getIntent().getExtras().getInt("stairpoi"));
-                stairp = getIntent().getExtras().getInt("stairpoi");
                 editor.putInt("STAIR", stairp);
-                nosidewalkpoi.setBackgroundResource(getIntent().getExtras().getInt("nosidewalkpoi"));
-                nosdwp = getIntent().getExtras().getInt("nosidewalkpoi");
                 editor.putInt("NOSW", nosdwp);
-                noramppoi.setBackgroundResource(getIntent().getExtras().getInt("noramppoi"));
-                normpp = getIntent().getExtras().getInt("noramppoi");
                 editor.putInt("NORMP", normpp);
                 editor.apply();
 
@@ -335,16 +439,23 @@ public class HomeActivity extends AppCompatActivity  {
             confirmReport.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    banmark = false;
-                    saveMarker();
+                    if(Utils.isNetworkConnected(HomeActivity.this)) {
+                        banmark = false;
+                        saveMarker();
+                    }else{
+                        showCustomToast("Sin conexion",0);
+                    }
                 }
             });
             sharereport.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(Utils.getTwitterIntent(HomeActivity.this, "aquí "+ reporteTipo + " %23smartMovingApp", startMarker.getPosition()));
-                    saveMarker();
-
+                    if(Utils.isNetworkConnected(HomeActivity.this)) {
+                        startActivity(Utils.getTwitterIntent(HomeActivity.this, "aquí " + reporteTipo + " %23smartMovingApp", startMarker.getPosition()));
+                        saveMarker();
+                    }else{
+                        showCustomToast("Sin conexion",0);
+                    }
                     hideKeyboard(HomeActivity.this);
                 }
             });
@@ -361,53 +472,88 @@ public class HomeActivity extends AppCompatActivity  {
             startNav.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    toolbar.setVisibility(View.VISIBLE);
+                    String all_severe="";
+                    String all_light="";
+
+
+
+
+                    searchdestination.setVisibility(View.INVISIBLE);
+                    if(severes.isEmpty()){
+                        all_severe ="0";
+                    }
+                    if(lights.isEmpty()){
+                        all_light = "0";
+                    }
+
+
+                    toolbarnav.setVisibility(View.VISIBLE);
                     scrollView.setVisibility(View.VISIBLE);
                     startNav.setVisibility(View.INVISIBLE);
                     cancelNav.setVisibility(View.INVISIBLE);
+                    markerToShare = new Marker(mMapView);
+                    GeoPoint geoPoint = new GeoPoint(mMapView.getMapCenter().getLatitude(),mMapView.getMapCenter().getLongitude());
+                    markerToShare.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+                    markerToShare.setIcon(getResources().getDrawable(R.drawable.target));
+                    markerToShare.setPosition(geoPoint);
+                    mMapView.getOverlays().add(markerToShare);
+                    mMapView.invalidate();
+                    markerDestination.setVisibility(View.INVISIBLE);
+                    showCustomToast("Circule por el lado de la vereda \n donde vea menos reportes",0);
+                    startNavigation(sendseveres.toString(), sendlights.toString());
+
+
+
+
                 }
             });
+            cancelNavBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    markerToShare.remove(mMapView);
+                    waypoints.clear();
+                    mLocationOverlay.enableFollowLocation();
+                    mMapView.getOverlays().remove(polyline);
+                    toolbarnav.setVisibility(View.INVISIBLE);
+                    toolbar.setVisibility(View.VISIBLE);
+                    searchdestination.setVisibility(View.VISIBLE);
+                    mMapView.invalidate();
+
+                }
+            });
+
             cancelNav.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     toolbar.setVisibility(View.VISIBLE);
+                    searchdestination.setVisibility(View.VISIBLE);
                     scrollView.setVisibility(View.VISIBLE);
                     scrollView.setVisibility(View.VISIBLE);
                     startNav.setVisibility(View.INVISIBLE);
                     cancelNav.setVisibility(View.INVISIBLE);
+                    //markerToShare.remove(mMapView);
+                    markerDestination.setVisibility(View.INVISIBLE);
+                    mLocationOverlay.enableFollowLocation();
+                    mMapView.invalidate();
                     banddestination=false;
                 }
             });
 
         if(getIntent().hasExtra("latt")) {
+            showCustomToast("Mueve el mapa",0);
             toolbar.setVisibility(View.INVISIBLE);
             scrollView.setVisibility(View.INVISIBLE);
             startNav.setVisibility(View.VISIBLE);
             cancelNav.setVisibility(View.VISIBLE);
-
-
-            //GeoPoint newdes = new GeoPoint(getIntent().getExtras().getDouble("latt"),getIntent().getExtras().getDouble("longg"));
-            //Marker mmarker = new Marker(mMapView);
-            //Marker markerToShare = new Marker(mMapView);
             banddestination = true;
-           // mmarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-            //markerToShare.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-          //  mmarker.setPosition(newdes);
-           // markerToShare.setPosition(newdes);
-         //   mmarker.setIcon(getResources().getDrawable(R.drawable.target));
-           // markerToShare.setIcon(getResources().getDrawable(R.drawable.target));
             markerDestination.setVisibility(View.VISIBLE);
-            mMapView.getOverlays().add(markerToShare);
             mLocationOverlay.disableFollowLocation();
-            mMapView.invalidate();
-            CameraPosition aCameraPosition = new CameraPosition.Builder().target(
-                    new LatLng(getIntent().getExtras().getDouble("latt"), getIntent().getExtras().getDouble("longg"))).zoom(15).build();
-            //mMapView.setAnimation(CameraUpdateFactory.newCameraPosition(aCameraPosition));
-            final IGeoPoint mapCenter =new GeoPoint(getIntent().getExtras().getDouble("latt"), getIntent().getExtras().getDouble("longg"));
-
+            IGeoPoint mapCenter =new GeoPoint(getIntent().getExtras().getDouble("latt"), getIntent().getExtras().getDouble("longg"));
             mMapView.getController().setCenter(mapCenter);
-            //mMapView.getMapCenter(newdes);
-            //mLocationOverlay.disableFollowLocation();
+            mMapView.invalidate();
+
+        }else{
+            mLocationOverlay.enableFollowLocation();
             mMapView.invalidate();
         }
 
@@ -421,7 +567,7 @@ public class HomeActivity extends AppCompatActivity  {
                 public void onClick(View v) {
 
                     scrollView.setVisibility(View.INVISIBLE);
-                    showToast();
+                    showCustomToast("Presione en el mapa \n donde desee colocar", 0);
                     sharereport.setVisibility(View.VISIBLE);
                     confirmReport.setVisibility(View.VISIBLE);
                     deleteReport.setVisibility(View.VISIBLE);
@@ -529,6 +675,231 @@ public class HomeActivity extends AppCompatActivity  {
 
 
         }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public void startNavigation(String severes, String lights){
+            //polyline.addPoint(mLocationOverlay.getMyLocation());
+            //polyline.addPoint(markerToShare.getPosition());
+            //GeoPoint newgp = new GeoPoint(-25.23235560, -57.56645870);
+            //GeoPoint newgp1 = new GeoPoint(-25.23179250, -57.56593980);
+            //GeoPoint newgp2 = new GeoPoint(-25.23238100, -57.56524090);
+            //GeoPoint newgp3 = new GeoPoint(-25.23297020, -57.56454120);
+        severes = severes.replace("[","");
+        severes = severes.replace("]","");
+        lights = lights.replace("[","");
+        lights = lights.replace("]","");
+        if(Utils.isNetworkConnected(HomeActivity.this)) {
+            CreateNavigationRequest navRequest = new CreateNavigationRequest();
+            NavigationRequest navigationRequestP = new NavigationRequest();
+            navRequest.setOrigin("POINT(" + mLocationOverlay.getMyLocation().getLongitude() + ' ' + mLocationOverlay.getMyLocation().getLatitude() + ')');
+            SharedPreferences userid = getSharedPreferences(Constants.CLIENTE_DATA, Context.MODE_PRIVATE);
+            navRequest.setUser_requested(userid.getInt(Constants.USER_ID, Context.MODE_PRIVATE));
+            navRequest.setDestination("POINT(" + markerToShare.getPosition().getLongitude() + ' ' + markerToShare.getPosition().getLatitude() + ')');
+            navRequest.setFinished(false);
+            navRequest.setReport_light(severes);
+            navRequest.setReport_severe(lights);
+            navigationRequestP.setGeometry(null);
+            navigationRequestP.setType("Feature");
+            navigationRequestP.setProperties(navRequest);
+            Gson gson = new GsonBuilder()
+                    .setLenient()
+                    .create();
+
+            final OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                    .connectTimeout(30, TimeUnit.SECONDS)
+                    .writeTimeout(30, TimeUnit.SECONDS)
+                    .readTimeout(30, TimeUnit.SECONDS)
+                    .addInterceptor(new TokenUserInterceptor(HomeActivity.this))
+                    .build();
+
+            Retrofit retrofit = new Retrofit.Builder()
+                    .client(okHttpClient)
+                    .baseUrl(Constants.BASE_URL_HOME)
+                    .addConverterFactory(GsonConverterFactory.create(gson))
+                    .build();
+
+            SmartMovingAPI smartMovingAPI = retrofit.create(SmartMovingAPI.class);
+            Call<NavigationRequest> call = smartMovingAPI.setNavigationRequest("application/vnd.geo+json", navigationRequestP);
+            ArrayList<String> routee = new ArrayList<>();
+            String origin, destiny;
+            GeoPoint destyn1 = new GeoPoint(0, 0);
+
+
+            try {
+                Response<NavigationRequest> result = call.execute();
+                if (result.code() == 201) {
+                    routee = result.body().getProperties().getRoute();
+                    origin = result.body().getProperties().getOrigin();
+                    destiny = result.body().getProperties().getDestination();
+                    origin = origin.replace("SRID=4326;POINT (", "");
+                    origin = origin.replace(")", "");
+                    String[] db = origin.split(" ");
+                    Double dblon = Double.parseDouble(db[0]);
+                    Double dblat = Double.parseDouble(db[1]);
+
+                    destiny = destiny.replace("SRID=4326;POINT (", "");
+                    destiny = destiny.replace(")", "");
+                    String[] db1 = destiny.split(" ");
+                    Double db1lon = Double.parseDouble(db1[0]);
+                    Double db1lat = Double.parseDouble(db1[1]);
+                    GeoPoint origin1 = new GeoPoint(dblat, dblon);
+                    destyn1.setLongitude(db1lon);
+                    destyn1.setLatitude(db1lat);
+                    waypoints.add(origin1);
+
+                } else {
+                    showCustomToast("Algo salió mal", R.drawable.sad);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            int count = 0;
+            int size = routee.size();
+
+
+            if (!routee.isEmpty()) {
+
+                for (String ad : routee) {
+                    String last = routee.get(routee.size() - 1);
+                    String[] lastnode = last.split(",");
+                    String endnode = lastnode[1];
+                    String[] separated = ad.split(",");
+                    String seq = separated[0];
+                    seq = seq.replace("(", "");
+                    String node = separated[1];
+                    if (!node.equals(endnode)) {
+                        String lon = separated[2];
+                        lon = lon.replace("Decimal(", "");
+                        lon = lon.replace(")", "");
+                        lon = lon.replace("'", "");
+
+                        String lat = separated[3];
+                        lat = lat.replace("Decimal(", "");
+                        lat = lat.replace(")", "");
+                        lat = lat.replace("'", "");
+                        GeoPoint ggp = new GeoPoint(Double.parseDouble(lat), Double.parseDouble(lon));
+                        waypoints.add(ggp);
+                        count = count + 1;
+                    } else {
+                        String lon = separated[2];
+                        lon = lon.replace("Decimal(", "");
+                        lon = lon.replace(")", "");
+                        lon = lon.replace("'", "");
+
+                        String lat = separated[3];
+                        lat = lat.replace("Decimal(", "");
+                        lat = lat.replace(")", "");
+                        lat = lat.replace("'", "");
+                        GeoPoint ggp = new GeoPoint(Double.parseDouble(lat), Double.parseDouble(lon));
+                        waypoints.add(ggp);
+                        waypoints.add(destyn1);
+                        break;
+                    }
+                }
+
+                PolylineOptions options = new PolylineOptions();
+                        options.setWidth(24);
+                        options.setColor(getResources().getColor(R.color.blue));
+                        options.setGeodesic(true);
+
+                //Road road = roadManager.;
+                //Polyline roadOverlay = RoadManager.buildRoadOverlay(waypoints)
+                mLocationOverlay.getMyLocationProvider().getLastKnownLocation().getAccuracy();
+                mLocationOverlay.setDrawAccuracyEnabled(true);
+                LocationRequest locationRequest = new LocationRequest();
+                locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+                polyline.setPoints(waypoints);
+                //ArrayList<GeoPoint> pointts= polyline.getPoints();
+                for(int i=0; i<waypoints.size()-1; i++){
+
+                    Double laat = waypoints.get(i).getLatitude();
+                    Double  loon = waypoints.get(i).getLongitude();
+                    Double laat0 = waypoints.get(i+1).getLatitude();
+                    Double loon0 = waypoints.get(i+1).getLongitude();
+                    LatLng newlatlong = new LatLng(laat,loon);
+                    LatLng newlatlong0 = new LatLng(laat0,loon0);
+                    LatLng segmentMiddlePoint = SphericalUtil.interpolate(newlatlong,newlatlong0,0.5);
+                    Double headingRotation = SphericalUtil.computeHeading(newlatlong,newlatlong0);
+                    addDirectionMarker(segmentMiddlePoint, headingRotation);
+                    mMapView.invalidate();
+
+                }
+                polyline.setWidth(24);
+
+                PolylineOptions polyop = new PolylineOptions();
+                polyop.setColor(getResources().getColor(R.color.blue));
+                String dist = String.valueOf(polyline.getDistance());
+                polyline.setColor(R.color.colorAccent);
+                polyline.setGeodesic(true);
+               mMapView.getOverlays().add(polyline);
+
+                mMapView.invalidate();
+                //OsmMapShapeConverter.addPolylineToMap(mMapView,polyline);
+
+            } else {
+                showCustomToast("Algo salió mal", 0);
+            }
+        }else{
+            showCustomToast("Sin conexion",0);
+        }
+
+
+        }
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public void addDirectionMarker(LatLng latLng, Double angle) {
+        Drawable circleDrawable = getApplicationContext().getDrawable(R.drawable.arroww);
+        //BitmapDescriptor markerIcon = BitmapDescriptorFactory.fromResource(R.drawable.arroww);
+        Marker markerarrow = new Marker(mMapView);
+        markerarrow.setIcon(getResources().getDrawable(R.drawable.arroww));
+        markerarrow.setAnchor(0.5f,0.5f);
+        GeoPoint newg = new GeoPoint(latLng.latitude,latLng.longitude);
+        markerarrow.setPosition(newg);
+        //markerarrow.setFlat(true);
+        //markerarrow.setRotation(Float.parseFloat(String.valueOf(angle)));
+        mMapView.getOverlays().add(markerarrow);
+        mMapView.invalidate();
+
+
+    }
+
+        public void  showCustomToast(CharSequence string, int imageid){
+            if (!string.equals("Sin conexion") && !string.equals("Active GPS") && !string.equals("Algo salió mal")) {
+                LayoutInflater li = getLayoutInflater();
+                View layout = li.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.custom_toast_layout_id));
+                Toast toast = new Toast(getApplicationContext());
+                toast.setDuration(Toast.LENGTH_LONG);
+                TextView textViewt = layout.findViewById(R.id.texttoast);
+                ImageView imageViewt = layout.findViewById(R.id.imageViewtoast);
+                if (imageid!=0) {
+                    imageViewt.setImageDrawable(getResources().getDrawable(imageid));
+                }
+                textViewt.setText(string);
+                imageViewt.setBackgroundColor(getResources().getColor(R.color.transp));
+                textViewt.setBackgroundColor(getResources().getColor(R.color.transp));
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER,Gravity.CLIP_HORIZONTAL,Gravity.CENTER_VERTICAL);
+                toast.setView(layout);//setting the view of custom toast layout
+                toast.show();
+
+            }else{
+                LayoutInflater li1 = getLayoutInflater();
+                View layout1 = li1.inflate(R.layout.other_toast_layout, (ViewGroup) findViewById(R.id.custom_toast_layout_id1));
+                Toast toast1 = new Toast(getApplicationContext());
+                TextView textViewt1 = layout1.findViewById(R.id.texttoast1);
+                textViewt1.setText(string);
+                textViewt1.setBackgroundColor(getResources().getColor(R.color.transp));
+                toast1.setGravity(Gravity.CENTER,Gravity.CLIP_HORIZONTAL,Gravity.CENTER_VERTICAL);
+                toast1.setDuration(Toast.LENGTH_LONG);
+                toast1.setView(layout1);//setting the view of custom toast layout
+                toast1.show();
+            }
+
+
+
+        }
+
+
     public static void hideKeyboard(Activity activity) {
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
         //Find the currently focused view, so we can grab the correct window token from it.
@@ -740,7 +1111,7 @@ public class HomeActivity extends AppCompatActivity  {
             @Override
             public void onFailure(Call<ReportsList> call, Throwable t) {
                 if(!Utils.isNetworkConnected(HomeActivity.this)){
-                    Utils.showToast("No hay conexion", HomeActivity.this);
+                    showCustomToast("Sin conexion",0);
                 }
                 t.printStackTrace();
             }
@@ -778,11 +1149,11 @@ public class HomeActivity extends AppCompatActivity  {
             public void onResponse(Call<CreateContributionPoi> call, Response<CreateContributionPoi> response) {
                 switch (response.code()) {
                     case 201:
-                        Utils.showToast1("Gracias por colaborar!",HomeActivity.this);
+                        showCustomToast("Gracias por contribuir", R.drawable.smile1);
 
                         break;
                     case 400:
-                        Utils.showToast("Ya contribuyo con este reporte",HomeActivity.this);
+                        showCustomToast("Ya contribuyó",0);
                         break;
                     default:
                         break;
@@ -791,7 +1162,7 @@ public class HomeActivity extends AppCompatActivity  {
             @Override
             public void onFailure(Call<CreateContributionPoi> call, Throwable t) {
                 if(!Utils.isNetworkConnected(HomeActivity.this)){
-                    Utils.showToast("No hay conexion", HomeActivity.this);
+                    showCustomToast("Sin conexion", 0);
                 }
                 t.printStackTrace();
             }
@@ -813,7 +1184,10 @@ public class HomeActivity extends AppCompatActivity  {
 
             meMap.put(newmarker,mid);
             namereport.put(mid,reportType);
-            lastupt.put(mid, reportPoi.getProperties().getModified());
+            String updated = reportPoi.getProperties().getModified();
+            String[] splitt = updated.split("T");
+            String date = splitt[0];
+            lastupt.put(mid, date);
             infoWindow.setRelatedObject(newmarker);
 
             mMapView.getOverlays().add(newmarker);
@@ -869,6 +1243,8 @@ public class HomeActivity extends AppCompatActivity  {
     @Override
     public void onBackPressed() {
         moveTaskToBack(true);
+        mLocationOverlay.enableFollowLocation();
+        mMapView.invalidate();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -883,22 +1259,16 @@ public class HomeActivity extends AppCompatActivity  {
         confirmReport.setVisibility(View.INVISIBLE);
         sharereport.setVisibility(View.INVISIBLE);
         tv1.setVisibility(View.INVISIBLE);tv2.setVisibility(View.INVISIBLE);tv3.setVisibility(View.INVISIBLE);
-        showToast1();
+        showCustomToast("Eliminado",R.drawable.sad);
         scrollView.setVisibility(View.VISIBLE);
         mMapView.invalidate();
         banmark = false;
     }
 
     private void saveMarker(){
-        if(coord!=null && Utils.isNetworkConnected(HomeActivity.this)) {
+        if(coord!=null) {
             setReport();
-            Toast toast = Toast.makeText(getApplicationContext(), "Creaste un Reporte!", Toast.LENGTH_LONG);
-            toast.setGravity(Gravity.CENTER, 0, 0);
-            LinearLayout toastContentView = (LinearLayout) toast.getView();
-            ImageView imageView = new ImageView(getApplicationContext());
-            imageView.setImageResource(R.drawable.smile1);
-            toastContentView.addView(imageView, 0);
-            toast.show();
+            showCustomToast("Creaste un reporte!",R.drawable.smile1);
             scrollView.setVisibility(View.VISIBLE);
             deleteReport.setVisibility(View.INVISIBLE);
             sharereport.setVisibility(View.INVISIBLE);
@@ -906,7 +1276,7 @@ public class HomeActivity extends AppCompatActivity  {
             tv1.setVisibility(View.INVISIBLE);tv2.setVisibility(View.INVISIBLE);tv3.setVisibility(View.INVISIBLE);
 
         }else{
-            showToast();
+            showCustomToast("Presione en el mapa \n donde desee colocar",0);
             banmark=true;
         }
 
@@ -956,7 +1326,7 @@ public class HomeActivity extends AppCompatActivity  {
             if(result.code() == 201){
 
             }else{
-                showToast1();
+                showCustomToast("Cancelado",R.drawable.sad);
             }
         }catch (IOException e){
             e.printStackTrace();
@@ -966,25 +1336,6 @@ public class HomeActivity extends AppCompatActivity  {
         lista.remove(coord.getLongitude());
         lista.remove(coord.getLatitude());
         setReportsPoiOnMap();
-    }
-    private void showToast() {
-        Toast toast = Toast.makeText(getApplicationContext(), "Presiona para colocar en el mapa", Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.CENTER, 0, 0);
-        LinearLayout toastContentView = (LinearLayout) toast.getView();
-        ImageView imageView = new ImageView(getApplicationContext());
-        imageView.setImageResource(R.mipmap.handicon);
-        toastContentView.addView(imageView, 0);
-        toast.show();
-
-    }
-    private void showToast1() {
-        Toast toast1 = Toast.makeText(getApplicationContext(), "Cancelado", Toast.LENGTH_LONG);
-        toast1.setGravity(Gravity.CENTER, 0, 0);
-        LinearLayout toastContentView1 = (LinearLayout) toast1.getView();
-        ImageView imageView1 = new ImageView(getApplicationContext());
-        imageView1.setImageResource(R.drawable.sad);
-        toastContentView1.addView(imageView1, 0);
-        toast1.show();
     }
 
 
@@ -1006,14 +1357,6 @@ public class HomeActivity extends AppCompatActivity  {
 
         switch (itemId)
         {
-            case R.id.connectfacebook:
-
-               Utils.connectToSocialNetwork(HomeActivity.this,"facebook");
-                break;
-            case R.id.connecttwiter:
-                //startActivity(Utils.getTwitterIntent(HomeActivity.this, "aqui hay una escalera", mLocationOverlay.getMyLocationProvider().getLastKnownLocation()));
-
-                break;
             case R.id.logoutbtn:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setMessage("Estas seguro que quieres Cerrar Sesion?")
@@ -1080,9 +1423,15 @@ public class HomeActivity extends AppCompatActivity  {
     }
     @Override
     public void onStart() {
+        Boolean gpsStatus = false;
+        LocationManager locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+        gpsStatus = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         super.onStart();
         if (!checkPermissions()) {
             requestPermissions();
+        }
+        if(gpsStatus==false){
+            showCustomToast("Active GPS", R.drawable.gps);
         }
     }
 

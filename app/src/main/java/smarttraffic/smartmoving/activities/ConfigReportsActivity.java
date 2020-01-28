@@ -1,6 +1,8 @@
 package smarttraffic.smartmoving.activities;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +11,7 @@ import android.widget.ImageButton;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import smarttraffic.smartmoving.Constants;
 import smarttraffic.smartmoving.R;
 
 public class ConfigReportsActivity extends AppCompatActivity {
@@ -55,7 +58,16 @@ public class ConfigReportsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.config_reports_layout);
         ButterKnife.bind(this);
-
+        SharedPreferences sharedReportsSevere = getApplicationContext().getSharedPreferences(
+                Constants.REPORT_SERVERE, Context.MODE_PRIVATE);
+        SharedPreferences sharedReportsLight = getApplicationContext().getSharedPreferences(
+                Constants.REPORT_LIGHT,Context.MODE_PRIVATE);
+        sharedReportsLight.getAll().clear();
+        sharedReportsSevere.getAll().clear();
+        final SharedPreferences.Editor editsevere = sharedReportsSevere.edit();
+        final SharedPreferences.Editor edittlight = sharedReportsLight.edit();
+        editsevere.clear();
+        edittlight.clear();
         badSideWalkYellow.setFocusable(true);
         badSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.green));
         badSideWalkRed.setFocusable(false);
@@ -103,8 +115,8 @@ public class ConfigReportsActivity extends AppCompatActivity {
                 noSideWalkYellow.setBackgroundColor(0);
                 stairYellow.setBackgroundColor(0);
                 noRampYellow.setBackgroundColor(0);
-
                 badSideWalkYellow.setFocusable(true);
+
                 badSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.green));
                 badSideWalkRed.setFocusable(false);
                 pendienteRed.setFocusable(false);
@@ -128,53 +140,70 @@ public class ConfigReportsActivity extends AppCompatActivity {
                 noRampRed.setFocusable(true);
                 noRampRed.setBackgroundColor(getResources().getColor(R.color.green));
                 noRampYellow.setFocusable(false);
-
             }
         });
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent i = new Intent(ConfigReportsActivity.this, HomeActivity.class);
                 if(carYellow.isFocusable()) {
-                    i.putExtra("carBtnPoi", R.mipmap.carinsidewalk);
+                    i.putExtra("carBtnPoiY", R.mipmap.carinsidewalk);
                 }else{
-                    i.putExtra("carBtnPoi",R.mipmap.carredpoi);
+                    i.putExtra("carBtnPoiR",R.mipmap.carredpoi);
+                    editsevere.putString("CARRED","6, ");
                 }
                 if(badSideWalkYellow.isFocusable()){
-                    i.putExtra("sidewalkBtnPoi",R.mipmap.sidewalkwarning);
+                    i.putExtra("sidewalkBtnPoiY",R.mipmap.sidewalkwarning);
+                    edittlight.putString("BADSW","2, ");
                 }else{
-                    i.putExtra("sidewalkBtnPoi",R.mipmap.badsidewalkred);
+                    i.putExtra("sidewalkBtnPoiR",R.mipmap.badsidewalkred);
+                    editsevere.putString("BADSW","2, ");
                 }
                 if(unevenYellow.isFocusable()){
-                    i.putExtra("streetBtnPoi",R.mipmap.uneven);
+                    i.putExtra("streetBtnPoiY",R.mipmap.uneven);
+                    edittlight.putString("UNEVEM","8, ");
                 }else{
-                    i.putExtra("streetBtnPoi",R.mipmap.unevenroadred);
+                    i.putExtra("streetBtnPoiR",R.mipmap.unevenroadred);
+                    editsevere.putString("UNEVEN","8, ");
                 }
                 if(obstacleYellow.isFocusable()){
-                    i.putExtra("obstacleBtnPoi",R.mipmap.obstacle);
+                    i.putExtra("obstacleBtnPoiY",R.mipmap.obstacle);
+                    edittlight.putString("OBSTACLE","7, ");
                 }else{
-                    i.putExtra("obstacleBtnPoi",R.mipmap.obstaclered);
+                    i.putExtra("obstacleBtnPoiR",R.mipmap.obstaclered);
+                    editsevere.putString("OBSTACLE","7, ");
                 }
                 if(pendienteYellow.isFocusable()){
-                    i.putExtra("pendienteBtnPoi",R.mipmap.pendiente);
+                    i.putExtra("pendienteBtnPoiY",R.mipmap.pendiente);
+                    edittlight.putString("PEND","4, ");
                 }else{
-                    i.putExtra("pendienteBtnPoi",R.mipmap.pendientered);
+                    i.putExtra("pendienteBtnPoiR",R.mipmap.pendientered);
+                    editsevere.putString("PEND","4, ");
                 }
                 if(noRampYellow.isFocusable()){
-                    i.putExtra("noramppoi",R.mipmap.norampyellow);
+                    i.putExtra("noramppoiY",R.mipmap.norampyellow);
+                    edittlight.putString("NORMP","10, ");
                 }else{
-                    i.putExtra("noramppoi",R.mipmap.norampredpoii);
+                    i.putExtra("noramppoiR",R.mipmap.norampredpoii);
+                    editsevere.putString("NORMP","10, ");
                 }
                 if(noSideWalkYellow.isFocusable()){
-                    i.putExtra("nosidewalkpoi",R.mipmap.nosidewalkyellowpoi);
+                    i.putExtra("nosidewalkpoiY",R.mipmap.nosidewalkyellowpoi);
+                    edittlight.putString("NOSDW","9, ");
                 }else{
-                    i.putExtra("nosidewalkpoi",R.mipmap.nosidewalkredpoii);
+                    i.putExtra("nosidewalkpoiR",R.mipmap.nosidewalkredpoii);
+                    editsevere.putString("NOSDW","9, ");
                 }
                 if(stairYellow.isFocusable()){
-                    i.putExtra("stairpoi",R.mipmap.stairpoiyellow);
+                    i.putExtra("stairpoiY",R.mipmap.stairpoiyellow);
+                    edittlight.putString("STAIR","1, ");
                 }else{
-                    i.putExtra("stairpoi",R.mipmap.stairredpoii);
+                    i.putExtra("stairpoiR",R.mipmap.stairredpoii);
+                    editsevere.putString("STAIR","1, ");
                 }
+                editsevere.apply();
+                edittlight.apply();
                 startActivity(i);
                 finish();
 

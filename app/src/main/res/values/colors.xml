@@ -13,6 +13,8 @@
     <color name="green">#a4c639</color>
     <color name="transparent">#FFFFFF</color>
     <color name = "light">#52A5E7</color>
-
+    <color name="transp">#00000000</color>
+    <color name="celeste">#9AF2FF</color>
+    <color name="verde">#69FF4B</color>
 
 </resources>

@@ -36,6 +36,9 @@
         <include
             android:id="@+id/toolbar"
             layout="@layout/toolbar"/>
+        <include android:id="@+id/linearlayout"
+            layout="@layout/toolbarnavigation"
+            android:visibility="invisible"/>
 
         <ImageButton
             android:id="@+id/sharebtn"
@@ -56,6 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:background="@color/transp"
             android:layout_marginTop="142dp"
             android:layout_marginRight="20dp"
             android:layout_alignParentEnd="true"
@@ -81,6 +85,7 @@
             android:layout_alignParentRight="true"
             android:visibility="invisible"
             android:layout_marginTop="220dp"
+            android:background="@color/transp"
             android:layout_marginRight="25dp"
             android:layout_alignParentEnd="true"
             android:text="Guardar"/>
@@ -106,26 +111,27 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="282dp"
             android:visibility="invisible"
+            android:background="@color/transp"
             android:layout_marginRight="20dp"
             android:layout_alignParentEnd="true"
             android:text="Cancelar"/>
         <ImageButton
             android:id="@+id/startnav"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginRight="32dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="40dp"
             android:layout_marginTop="280dp"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:background="@drawable/btn_circle"
             android:src="@drawable/go" />
         <ImageButton
             android:id="@+id/cancelnav"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginRight="32dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
@@ -134,7 +140,6 @@
             android:visibility="invisible"
             android:background="@drawable/circlered"
             android:src="@drawable/resetclose" />
-
 
         <HorizontalScrollView
             android:id="@+id/scrollPartition"

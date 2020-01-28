@@ -20,6 +20,7 @@ import smarttraffic.smartmoving.dataModels.Reports.ReportsList;
 import smarttraffic.smartmoving.dataModels.UserToken;
 import smarttraffic.smartmoving.dataModels.Events;
 import smarttraffic.smartmoving.dataModels.navigations.NavigationRequest;
+import smarttraffic.smartmoving.dataModels.navigations.Rquest;
 
 public interface SmartMovingAPI {
 
@@ -49,7 +50,14 @@ public interface SmartMovingAPI {
     Call<CreateContributionPoi> setContributionReport(@Body CreateContributionPoi createContribution);
 
     @POST("smartmoving/navigationrequests/")
-    Call<NavigationRequest> setNavigationRequest(@Body NavigationRequest createNavigation);
+    Call<NavigationRequest> setNavigationRequest(@Header("Content-Type") String content_type, @Body NavigationRequest createNavigation);
+
+    @GET("smartmoving/navigationrequests/{identifier}/")
+    Call<Rquest> getNavigationRquest(@Path ("identifier") Integer navigationid);
+
+    @PATCH("smartmoving/navigationrequests/{identifier}/")
+    Call<Rquest> updateNavigationRequest(@Path("identifier") Integer navigationid,
+                                         @Body ChangePasswActivity.Password newProfile);
 
 
 

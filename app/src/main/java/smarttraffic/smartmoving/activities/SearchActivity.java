@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Gravity;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -29,6 +33,7 @@ import android.location.Geocoder;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.wang.avi.AVLoadingIndicatorView;
@@ -48,11 +53,12 @@ public class SearchActivity extends AppCompatActivity {
     ArrayList<String> address = new ArrayList<>();
     @BindView(R.id.button_search)
     Button btnSearch;
+
     private ArrayAdapter adapter;
     Double latt=null;
     Double longg=null;
     int band = 0;
-    String str;
+    String str="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +67,8 @@ public class SearchActivity extends AppCompatActivity {
         Context mContext;
         InputMethodManager inputMethodManager =  (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
         inputMethodManager.showSoftInput(search_et,InputMethodManager.SHOW_IMPLICIT);
+        getIntent().removeExtra("latt");
+        getIntent().removeExtra("longg");
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,10 +82,10 @@ public class SearchActivity extends AppCompatActivity {
                         intent.putExtra("long", longg);
                         startActivity(intent);
                     }else{
-                        Utils.showToast("Error", SearchActivity.this);
+                        showToast("Error");
                     }
                 }else{
-                    Utils.showToast("Error", SearchActivity.this);
+                    showToast("Error");
                 }
             }
         });
@@ -95,6 +103,16 @@ public class SearchActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        search_et.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+                if (i == KeyEvent.KEYCODE_DEL && !address.isEmpty()){
+                    address.remove(0);
+                }
+
+                return false;
+            }
+        });
         search_et.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -102,14 +120,16 @@ public class SearchActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if(charSequence.toString().length()>2) {
+                if(charSequence.toString().length()>4) {
                     band =1;
 
                     ArrayList<Address> ad = findAddresses(search_et.getText().toString());
 
-                    if(!ad.isEmpty()) {
-                        address.add(ad.get(0).getFeatureName());
+                    if(!ad.isEmpty() && !ad.get(0).getAddressLine(0).equals(str)) {
+                        address.add(ad.get(0).getAddressLine(0));
+                        str = ad.get(0).getAddressLine(0);
                     }
+
                     //address.add(ad.get(0).getCountryName());
                     adapter = new ArrayAdapter(SearchActivity.this, R.layout.activity_search,R.id.list_search,address);
                     list_address.setAdapter(adapter);
@@ -117,8 +137,8 @@ public class SearchActivity extends AppCompatActivity {
             }
             @Override
             public void afterTextChanged(Editable editable) {
-                if(editable.toString().length()>3 && findAddresses(search_et.getText().toString())!=null) {
-                    (SearchActivity.this).adapter.getFilter().filter(str);
+                if(editable.toString().length()>4 && findAddresses(search_et.getText().toString())!=null) {
+                   //(SearchActivity.this).adapter.getFilter().filter();
                 }
 
             }
@@ -127,6 +147,18 @@ public class SearchActivity extends AppCompatActivity {
 
 
 
+    }
+    public void showToast(String message){
+        LayoutInflater li2 = getLayoutInflater();
+        View layout2 = li2.inflate(R.layout.other_toast_layout, (ViewGroup) findViewById(R.id.custom_toast_layout_id1));
+        Toast toast2 = new Toast(getApplicationContext());
+        TextView textViewt2 = layout2.findViewById(R.id.texttoast1);
+        textViewt2.setText(message);
+        textViewt2.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.transp));
+        toast2.setGravity(Gravity.CENTER,Gravity.CLIP_HORIZONTAL,Gravity.CENTER_VERTICAL);
+        toast2.setDuration(Toast.LENGTH_LONG);
+        toast2.setView(layout2);//setting the view of custom toast layout
+        toast2.show();
     }
 
     private ArrayList<Address> findAddresses(String address) {

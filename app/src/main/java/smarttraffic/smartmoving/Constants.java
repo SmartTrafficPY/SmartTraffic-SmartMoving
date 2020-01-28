@@ -13,11 +13,13 @@ public class Constants {
     public static final String REPORTS_POI ="REPORTS_POI";
     public static final String USER_ID = "USER_ID";
     public static final String KEY_DETECTED_ACTIVITIES = "KEY_DETECTED_ACTIVITIES";
+    public  static final String REPORT_SERVERE = "REPORT_SEVERE";
+    public  static final String REPORT_LIGHT = "REPORT_LIGHT";
 
     private static final long SECONDS_IN_MILLISECONDS = 1000 * 1;
     private static final long MINUTES_IN_MILLISECONDS = SECONDS_IN_MILLISECONDS * 60;
     private static final long HOURS_IN_MILLISECONDS = MINUTES_IN_MILLISECONDS * 60;
-    public static final String BASE_URL_HOME = "http://192.168.1.253:8000/api/";
+    public static final String BASE_URL_HOME = "http://192.168.0.6:8000/api/";
     public static final String BASE_URL = "https://api.smarttraffic.com.py/api/";
     public static final String TILE_SERVER = "https://api.smarttraffic.com.py/tile/";
     private static final String CHANNEL_ID = "SMARTMOVING_CHANNEL_ID";

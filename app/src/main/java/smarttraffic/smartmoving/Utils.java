@@ -5,16 +5,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.location.Location;
 import android.net.ConnectivityManager;
+import android.support.v7.app.AppCompatActivity;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.util.Base64;
 import android.view.Gravity;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.facebook.share.model.ShareHashtag;
-import com.facebook.share.model.ShareLinkContent;
+
 
 import org.osmdroid.util.GeoPoint;
 
@@ -24,17 +26,9 @@ import java.util.Map;
 
 import smarttraffic.smartmoving.dataModels.Reports.ReportPoi;
 
+
 public class Utils {
 
-    public static void showToast(String message, Context context) {
-        Toast toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.CENTER, 0, 0);
-        LinearLayout toastContentView = (LinearLayout) toast.getView();
-        ImageView imageView = new ImageView(context);
-        imageView.setImageResource(R.drawable.sad);
-        toastContentView.addView(imageView, 0);
-        toast.show();
-    }
 
     public static void ReportsPoiSharedPreferences(Context context, List<ReportPoi> reportspoi) {
         SharedPreferences prefs = context.getSharedPreferences("REPORTS SYSTEM",
@@ -46,17 +40,6 @@ public class Utils {
         }
     }
 
-    public static void connectToSocialNetwork(Context ctx, String name){
-        ShareLinkContent.Builder content = new ShareLinkContent.Builder()
-                .setContentUrl(Uri.parse("https://developers.facebook.com"))
-                .setShareHashtag(new ShareHashtag.Builder()
-                        .setHashtag("#ConnectTheWorld")
-                        .build());
-
-
-
-
-    }
 
     public static Intent getTwitterIntent(Context ctx, String shareText, GeoPoint positionMarker)
     {
@@ -69,16 +52,6 @@ public class Utils {
             Uri uri = Uri.parse(tweetUrl);
             shareIntent = new Intent(Intent.ACTION_VIEW, uri);
             return shareIntent;
-    }
-
-    public static void showToast1(String message, Context context) {
-        Toast toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.CENTER, 0, 0);
-        LinearLayout toastContentView = (LinearLayout) toast.getView();
-        ImageView imageView = new ImageView(context);
-        imageView.setImageResource(R.drawable.smile);
-        toastContentView.addView(imageView, 0);
-        toast.show();
     }
 
 
