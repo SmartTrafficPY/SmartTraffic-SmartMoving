@@ -40,6 +40,36 @@
             layout="@layout/toolbarnavigation"
             android:visibility="invisible"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/advertencia"
+            android:layout_below="@+id/linearlayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alerticon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Circular por el lado de la vereda que tenga menos obstáculos" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lytPartitionReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:visibility="invisible"
+            android:scrollbars="none">
+
         <ImageButton
             android:id="@+id/sharebtn"
             android:layout_width="40dp"
@@ -47,23 +77,21 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
+
             android:background="@drawable/btnshare"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:src="@drawable/share" />
         <TextView
             android:id="@+id/tv1"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:background="@color/transp"
-            android:layout_marginTop="142dp"
-            android:layout_marginRight="20dp"
             android:layout_alignParentEnd="true"
-            android:text="Guardar y \nCompartir"/>
+            android:text="Guardar y\nCompartir"/>
+
+
 
         <ImageButton
             android:id="@+id/confirmreport"
@@ -72,22 +100,18 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="180dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
+
             android:background="@drawable/btn_circle"
             android:src="@drawable/check"
-            android:visibility="invisible" />
+            android:visibility="visible" />
         <TextView
             android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:visibility="invisible"
-            android:layout_marginTop="220dp"
+            android:visibility="visible"
+
             android:background="@color/transp"
             android:layout_marginRight="25dp"
-            android:layout_alignParentEnd="true"
             android:text="Guardar"/>
 
 
@@ -98,10 +122,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="240dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:background="@drawable/circlered"
             android:src="@drawable/resetclose" />
         <TextView
@@ -109,37 +130,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="282dp"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:background="@color/transp"
             android:layout_marginRight="20dp"
             android:layout_alignParentEnd="true"
             android:text="Cancelar"/>
-        <ImageButton
-            android:id="@+id/startnav"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginRight="32dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytPartition1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="40dp"
-            android:layout_marginTop="280dp"
+            android:background="@color/white"
             android:visibility="invisible"
-            android:background="@drawable/btn_circle"
-            android:src="@drawable/go" />
-        <ImageButton
+            android:scrollbars="none">
+
+            <Button
             android:id="@+id/cancelnav"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="32dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="100dp"
-            android:visibility="invisible"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:visibility="visible"
+            android:text="Cancelar"
+                android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
             android:background="@drawable/circlered"
-            android:src="@drawable/resetclose" />
+            android:drawableLeft="@drawable/resetclose" />
+
+            <Button
+                android:id="@+id/startnav"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/initnav"
+                android:drawableLeft="@drawable/go"
+                android:text="Iniciar"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recomendacion"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/alerticon"
+                android:text=" Mueve el mapa \n para reubicar destino"/>
+
+        </LinearLayout>
+
 
         <HorizontalScrollView
             android:id="@+id/scrollPartition"
@@ -148,6 +187,7 @@
             android:layout_alignParentBottom="true"
             android:background="#5CFFFFFF"
             android:contextClickable="true"
+            android:visibility="visible"
             android:outlineSpotShadowColor="@color/transparent"
             android:scrollbars="none">
 

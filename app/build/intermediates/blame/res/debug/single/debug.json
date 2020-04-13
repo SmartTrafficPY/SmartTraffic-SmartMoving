@@ -76,6 +76,10 @@
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\closeblack.png"
     },
     {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_initnav.xml.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable\\initnav.xml"
+    },
+    {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_arrow_back_grey600_24.png.flat",
         "source": "C:\\Users\\Monica\\.gradle\\caches\\transforms-2\\files-2.1\\37b0accfc95bd8dd132538a488631c0e\\res\\drawable-hdpi-v4\\quantum_ic_arrow_back_grey600_24.png"
     },
@@ -2378,6 +2382,10 @@
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_about_menu.png.flat",
         "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable-mdpi\\about_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
+        "source": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\src\\main\\res\\drawable\\border.xml"
     },
     {
         "merged": "C:\\Users\\Monica\\Documents\\smartmoving\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_stairpoiyellow.png.flat",

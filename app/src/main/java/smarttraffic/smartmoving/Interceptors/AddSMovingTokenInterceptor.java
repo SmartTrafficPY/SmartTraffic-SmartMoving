@@ -8,16 +8,16 @@ import smarttraffic.smartmoving.SMovingInitialToken;
 import java.io.IOException;
 public class AddSMovingTokenInterceptor implements Interceptor {
 
-    public AddSMovingTokenInterceptor(){
-    }
+  public AddSMovingTokenInterceptor(){
+  }
 
-    @Override
-    public Response intercept(Chain chain) throws IOException {
-        Request newRequest = chain.request().newBuilder()
-                .addHeader("Authorization", "Token "
-                + SMovingInitialToken.getToken())
-                .build();
-        return chain.proceed(newRequest);
-    }
+  @Override
+  public Response intercept(Chain chain) throws IOException {
+    Request newRequest = chain.request().newBuilder()
+            .addHeader("Authorization", "Token "
+                    + SMovingInitialToken.getToken())
+            .build();
+    return chain.proceed(newRequest);
+  }
 
 }

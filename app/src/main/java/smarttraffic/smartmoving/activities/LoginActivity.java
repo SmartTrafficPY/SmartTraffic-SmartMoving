@@ -87,39 +87,39 @@ public class LoginActivity extends AppCompatActivity {
         toast.show();
     }
 
-        private void makeLoginHappen() {
+    private void makeLoginHappen() {
 
 
-            btnLogin.setEnabled(false);
-            AVLoadingIndicatorView avLoadingIndicatorView=new AVLoadingIndicatorView(LoginActivity.this);
-            avLoadingIndicatorView.setIndicator("BallSpinFadeLoader");
-            avLoadingIndicatorView.setIndicatorColor(R.color.white);
+        btnLogin.setEnabled(false);
+        AVLoadingIndicatorView avLoadingIndicatorView=new AVLoadingIndicatorView(LoginActivity.this);
+        avLoadingIndicatorView.setIndicator("BallSpinFadeLoader");
+        avLoadingIndicatorView.setIndicatorColor(R.color.white);
 
-            sendLoginRequest();
+        sendLoginRequest();
 
 
-            new android.os.Handler().postDelayed(
-                    new Runnable() {
-                        public void run() {
-                            /**Here the service get the request of Login...**/
-                            btnLogin.setEnabled(true);
+        new android.os.Handler().postDelayed(
+                new Runnable() {
+                    public void run() {
+                        /**Here the service get the request of Login...**/
+                        btnLogin.setEnabled(true);
 
-                        }
-                    }, 2000);
-            //eraseCredentials();
-        }
+                    }
+                }, 2000);
+        //eraseCredentials();
+    }
 
-        //private void eraseCredentials() {
-        //    etUsername.setText("");
-         //   etPassword.setText("");
-        //}
+    //private void eraseCredentials() {
+    //    etUsername.setText("");
+    //   etPassword.setText("");
+    //}
 
-        private void sendLoginRequest() {
-            Intent loginIntent = new Intent(LoginActivity.this, LoginService.class);
-            loginIntent.putExtra("username", etUsername.getText().toString());
-            loginIntent.putExtra("password", etPassword.getText().toString());
-            startService(loginIntent);
-        }
+    private void sendLoginRequest() {
+        Intent loginIntent = new Intent(LoginActivity.this, LoginService.class);
+        loginIntent.putExtra("username", etUsername.getText().toString());
+        loginIntent.putExtra("password", etPassword.getText().toString());
+        startService(loginIntent);
+    }
 
     @Override
     public void onBackPressed() {

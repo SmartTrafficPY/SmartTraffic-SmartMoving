@@ -1,5 +1,6 @@
 package smarttraffic.smartmoving.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.location.Location;
 import android.support.v7.app.AppCompatActivity;
@@ -59,12 +60,14 @@ public class SearchActivity extends AppCompatActivity {
     Double longg=null;
     int band = 0;
     String str="";
+    String name="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search1);
         ButterKnife.bind(this);
         Context mContext;
+
         InputMethodManager inputMethodManager =  (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
         inputMethodManager.showSoftInput(search_et,InputMethodManager.SHOW_IMPLICIT);
         getIntent().removeExtra("latt");
@@ -78,8 +81,8 @@ public class SearchActivity extends AppCompatActivity {
                         latt = strings.get(0).getLatitude();
                         longg = strings.get(0).getLongitude();
                         Intent intent = new Intent(SearchActivity.this, HomeActivity.class);
-                        intent.putExtra("lat", latt);
-                        intent.putExtra("long", longg);
+                        intent.putExtra("latt", latt);
+                        intent.putExtra("longg", longg);
                         startActivity(intent);
                     }else{
                         showToast("Error");
@@ -107,7 +110,9 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public boolean onKey(View view, int i, KeyEvent keyEvent) {
                 if (i == KeyEvent.KEYCODE_DEL && !address.isEmpty()){
-                    address.remove(0);
+                    address.clear();
+                    adapter = new ArrayAdapter(SearchActivity.this, R.layout.activity_search,R.id.list_search,address);
+                    list_address.setAdapter(adapter);
                 }
 
                 return false;
@@ -126,8 +131,9 @@ public class SearchActivity extends AppCompatActivity {
                     ArrayList<Address> ad = findAddresses(search_et.getText().toString());
 
                     if(!ad.isEmpty() && !ad.get(0).getAddressLine(0).equals(str)) {
-                        address.add(ad.get(0).getAddressLine(0));
-                        str = ad.get(0).getAddressLine(0);
+                            address.add(ad.get(0).getAddressLine(0));
+                            str = ad.get(0).getAddressLine(0);
+
                     }
 
                     //address.add(ad.get(0).getCountryName());
@@ -164,7 +170,7 @@ public class SearchActivity extends AppCompatActivity {
     private ArrayList<Address> findAddresses(String address) {
         Geocoder geocoder = new Geocoder(SearchActivity.this);
         try {
-            address += ", Asuncion Paraguay";
+            address += ",Asuncion Paraguay";
             return (ArrayList<Address>) geocoder.getFromLocationName(address, 10);
         } catch (IOException e) {
             e.printStackTrace();
@@ -235,25 +241,13 @@ public class SearchActivity extends AppCompatActivity {
 
         return location;
     }
-
-    public String getLocationFromAddress(String strAddress) {
-
-        Geocoder coder = new Geocoder(getApplicationContext());
-        List<Address> address;
-
-        try {
-            address = coder.getFromLocationName(strAddress + ", Paraguay", 1);
-            if (address == null) {
-                return null;
-            }
-            Address location = address.get(0);
-            double lat = location.getLatitude();
-            double lng = location.getLongitude();
-
-            return lat + "," + lng;
-        } catch (Exception e) {
-            return null;
-        }
+    @Override
+    public void onBackPressed() {
+        Intent returnIntent = new Intent();
+        returnIntent.putExtra("hasBackPressed",true);
+        setResult(Activity.RESULT_OK,returnIntent);
+        finish();
     }
+
 
 }

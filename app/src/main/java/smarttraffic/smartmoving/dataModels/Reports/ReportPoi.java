@@ -1,10 +1,11 @@
-package smarttraffic.smartmoving.dataModels.Reports;
 
+package smarttraffic.smartmoving.dataModels.Reports;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import smarttraffic.smartmoving.dataModels.Point;
+import smarttraffic.smartmoving.dataModels.Reports.ReportsPoi;
 
 public class ReportPoi {
     private String type = "Feature";

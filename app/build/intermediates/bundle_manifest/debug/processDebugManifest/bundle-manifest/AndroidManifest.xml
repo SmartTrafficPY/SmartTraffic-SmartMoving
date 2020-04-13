@@ -46,20 +46,21 @@
         android:allowBackup="true"
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
+        android:enabled="true"
+        android:exported="true"
         android:fullBackupOnly="false"
         android:icon="@drawable/smicono"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/smicono"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/MyAppTheme" >
         <activity
             android:name="smarttraffic.smartmoving.activities.SearchActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.SmartMoving"
-            android:windowSoftInputMode="stateHidden" >
+            android:windowSoftInputMode="stateVisible|adjustResize" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="smarttraffic.smartmoving.activities.MainActivity" />
@@ -124,7 +125,15 @@
             android:name="smarttraffic.smartmoving.services.RegistrationService"
             android:enabled="true"
             android:exported="false" />
+        <service
+            android:name="smarttraffic.smartmoving.services.LocationUpdatesService"
+            android:enabled="true"
+            android:exported="true" />
 
+        <receiver
+            android:name="smarttraffic.smartmoving.Receivers.RemoveGeoFencing"
+            android:enabled="true"
+            android:exported="true" />
         <receiver
             android:name="smarttraffic.smartmoving.Receivers.RegistrationReceiver"
             android:enabled="true"
@@ -133,11 +142,19 @@
                 <action android:name="registrationIntent" />
             </intent-filter>
         </receiver>
+        <receiver
+            android:name="smarttraffic.smartmoving.Receivers.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
 
         <service
             android:name="smarttraffic.smartmoving.services.LoginService"
             android:enabled="true"
             android:exported="false" />
+        <service
+            android:name="smarttraffic.smartmoving.services.GeofenceTransitionsJobIntentService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <receiver
             android:name="smarttraffic.smartmoving.Receivers.LoginReceiver"
@@ -147,6 +164,20 @@
                 <action android:name="loginIntent" />
             </intent-filter>
         </receiver>
+        <receiver
+            android:name="smarttraffic.smartmoving.Receivers.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="smarttraffic.smartmoving.services.GeofenceTransitionsJobIntentService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="smarttraffic.smartmoving.Receivers.AlarmGeoFencing"
+            android:enabled="true"
+            android:exported="true" />
 
         <activity
             android:name="smarttraffic.smartmoving.activities.ChangePasswActivity"

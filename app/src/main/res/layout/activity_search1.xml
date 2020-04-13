@@ -14,7 +14,7 @@
         android:id="@+id/search_et"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Introduzca nombre de la calle"
+        android:hint="Introduzca nombre \n de la calle"
         android:singleLine="true"
         android:imeOptions="actionSearch"
         android:background="@null"
@@ -34,13 +34,12 @@
         />
 
 
-
     <ListView
         android:id="@+id/simpleListView"
-        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="#000"
-        android:dividerHeight="2dp"/>
+        android:layout_marginTop="80dp"
+        android:divider="#B49C9090"
+        android:dividerHeight="2dp" />
 
 </RelativeLayout>

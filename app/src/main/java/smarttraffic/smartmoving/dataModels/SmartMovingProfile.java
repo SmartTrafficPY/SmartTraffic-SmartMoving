@@ -12,11 +12,11 @@ public class SmartMovingProfile {
 
     @Override
     public String toString(){
-      return "smartmovingprofile{" +
-              "birth_date='" + birth_date + '\'' +
-              ", sex='" + sex + '\'' +
-              ",movement_type='" + movement_type + '\'' +
-              '}';
+        return "smartmovingprofile{" +
+                "birth_date='" + birth_date + '\'' +
+                ", sex='" + sex + '\'' +
+                ",movement_type='" + movement_type + '\'' +
+                '}';
     }
     public String getBirth_date(){return birth_date; }
     public void setBirth_date(String birth_date){ this.birth_date = birth_date; }

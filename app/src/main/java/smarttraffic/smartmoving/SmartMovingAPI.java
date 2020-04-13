@@ -18,7 +18,7 @@ import smarttraffic.smartmoving.dataModels.Reports.Properties;
 import smarttraffic.smartmoving.dataModels.Reports.ReportPoi;
 import smarttraffic.smartmoving.dataModels.Reports.ReportsList;
 import smarttraffic.smartmoving.dataModels.UserToken;
-import smarttraffic.smartmoving.dataModels.Events;
+import smarttraffic.smartmoving.dataModels.navigations.NavigationChangeScore;
 import smarttraffic.smartmoving.dataModels.navigations.NavigationRequest;
 import smarttraffic.smartmoving.dataModels.navigations.Rquest;
 
@@ -33,8 +33,6 @@ public interface SmartMovingAPI {
     @PATCH("smartmoving/users/{identifier}/")
     Call<ProfileUser> updateUserProfile(@Path("identifier") Integer userId,
                                         @Body ChangePasswActivity.Password newProfile);
-    @POST("events/")
-    Call<ResponseBody> setUserEvent(@Header("Content-Type") String content_type, @Body Events event);
 
     @POST("smartmoving/reports/")
     Call<ReportPoi> setReportPoi(@Header("Content-Type") String content_type,
@@ -52,12 +50,10 @@ public interface SmartMovingAPI {
     @POST("smartmoving/navigationrequests/")
     Call<NavigationRequest> setNavigationRequest(@Header("Content-Type") String content_type, @Body NavigationRequest createNavigation);
 
-    @GET("smartmoving/navigationrequests/{identifier}/")
-    Call<Rquest> getNavigationRquest(@Path ("identifier") Integer navigationid);
 
     @PATCH("smartmoving/navigationrequests/{identifier}/")
-    Call<Rquest> updateNavigationRequest(@Path("identifier") Integer navigationid,
-                                         @Body ChangePasswActivity.Password newProfile);
+    Call<NavigationChangeScore> updateNavigationRequest(@Header("Content-Type") String content_type, @Path("identifier") Integer navigationid,
+                                         @Body NavigationChangeScore navigationChangeScore);
 
 
 

@@ -8,16 +8,16 @@ import okhttp3.Response;
 
 public class GeoJsonInterceptor implements Interceptor {
 
-    public GeoJsonInterceptor(){
-        // Persistence Constructor
-    }
+  public GeoJsonInterceptor(){
+    // Persistence Constructor
+  }
 
-    @Override
-    public Response intercept(Chain chain) throws IOException {
-        Request newRequest  = chain.request().newBuilder()
-                .addHeader("Accept", "application/vnd.geo+json")
-                .build();
-        return chain.proceed(newRequest);
-    }
+  @Override
+  public Response intercept(Chain chain) throws IOException {
+    Request newRequest  = chain.request().newBuilder()
+            .addHeader("Accept", "application/vnd.geo+json")
+            .build();
+    return chain.proceed(newRequest);
+  }
 
 }

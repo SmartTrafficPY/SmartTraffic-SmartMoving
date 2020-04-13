@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" 
+            android:layout_height="wrap_content"
             android:text="Configurar reportes leves y graves"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
@@ -21,7 +21,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
+
         <TextView
             android:id="@+id/textview1"
             android:layout_width="wrap_content"

@@ -65,15 +65,15 @@
 
 
 
-            <Button
-                android:id="@+id/btnlogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_rectangle"
-                android:shadowColor="#C598CC"
-                android:text="Entrar"
-                android:layout_marginTop="25dp"
-                android:textColor="#F7F1F3" />
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle"
+            android:shadowColor="#C598CC"
+            android:text="Entrar"
+            android:layout_marginTop="25dp"
+            android:textColor="#F7F1F3" />
 
 
         <TextView
@@ -91,4 +91,3 @@
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
-

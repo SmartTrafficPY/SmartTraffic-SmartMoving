@@ -3,6 +3,7 @@ package smarttraffic.smartmoving.dataModels.navigations;
 import smarttraffic.smartmoving.dataModels.Point;
 
 public class NavigationRequest {
+
     private String type = "Feature";
     private CreateNavigationRequest properties;
     private Point geometry = null;

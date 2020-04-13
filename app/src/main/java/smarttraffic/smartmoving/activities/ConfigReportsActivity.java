@@ -69,28 +69,36 @@ public class ConfigReportsActivity extends AppCompatActivity {
         editsevere.clear();
         edittlight.clear();
         badSideWalkYellow.setFocusable(true);
-        badSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.green));
+        badSideWalkYellow.setBackground(getResources().getDrawable(R.drawable.border));
+       // badSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.green));
         badSideWalkRed.setFocusable(false);
         pendienteRed.setFocusable(false);
         pendienteYellow.setFocusable(true);
-        pendienteYellow.setBackgroundColor(getResources().getColor(R.color.green));
+        pendienteYellow.setBackground(getResources().getDrawable(R.drawable.border));
+        //pendienteYellow.setBackgroundColor(getResources().getColor(R.color.green));
         carRed.setFocusable(false);
         carYellow.setFocusable(true);
-        carYellow.setBackgroundColor(getResources().getColor(R.color.green));
+        carYellow.setBackground(getResources().getDrawable(R.drawable.border));
+        //carYellow.setBackgroundColor(getResources().getColor(R.color.green));
         obstacleRed.setFocusable(false);
         obstacleYellow.setFocusable(true);
-        obstacleYellow.setBackgroundColor(getResources().getColor(R.color.green));
+        obstacleYellow.setBackground(getResources().getDrawable(R.drawable.border));
+        //obstacleYellow.setBackgroundColor(getResources().getColor(R.color.green));
         unevenrRed.setFocusable(false);
         unevenYellow.setFocusable(true);
-        unevenYellow.setBackgroundColor(getResources().getColor(R.color.green));
+        unevenYellow.setBackground(getResources().getDrawable(R.drawable.border));
+        //unevenYellow.setBackgroundColor(getResources().getColor(R.color.green));
         noSideWalkRed.setFocusable(true);
-        noSideWalkRed.setBackgroundColor(getResources().getColor(R.color.green));
+        noSideWalkRed.setBackground(getResources().getDrawable(R.drawable.border));
+        //noSideWalkRed.setBackgroundColor(getResources().getColor(R.color.green));
         noSideWalkYellow.setFocusable(false);
         stairRed.setFocusable(true);
-        stairRed.setBackgroundColor(getResources().getColor(R.color.green));
+        stairRed.setBackground(getResources().getDrawable(R.drawable.border));
+        //stairRed.setBackgroundColor(getResources().getColor(R.color.green));
         stairYellow.setFocusable(false);
         noRampRed.setFocusable(true);
-        noRampRed.setBackgroundColor(getResources().getColor(R.color.green));
+        noRampRed.setBackground(getResources().getDrawable(R.drawable.border));
+        //noRampRed.setBackgroundColor(getResources().getColor(R.color.green));
         noRampYellow.setFocusable(false);
         badSideWalkRed.setBackgroundColor(0);
         pendienteRed.setBackgroundColor(0);
@@ -117,28 +125,28 @@ public class ConfigReportsActivity extends AppCompatActivity {
                 noRampYellow.setBackgroundColor(0);
                 badSideWalkYellow.setFocusable(true);
 
-                badSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.green));
+                badSideWalkYellow.setBackground(getResources().getDrawable(R.drawable.border));
                 badSideWalkRed.setFocusable(false);
                 pendienteRed.setFocusable(false);
                 pendienteYellow.setFocusable(true);
-                pendienteYellow.setBackgroundColor(getResources().getColor(R.color.green));
+                pendienteYellow.setBackground(getResources().getDrawable(R.drawable.border));
                 carRed.setFocusable(false);
                 carYellow.setFocusable(true);
-                carYellow.setBackgroundColor(getResources().getColor(R.color.green));
+                carYellow.setBackground(getResources().getDrawable(R.drawable.border));
                 obstacleRed.setFocusable(false);
                 obstacleYellow.setFocusable(true);
-                obstacleYellow.setBackgroundColor(getResources().getColor(R.color.green));
+                obstacleYellow.setBackground(getResources().getDrawable(R.drawable.border));
                 unevenrRed.setFocusable(false);
                 unevenYellow.setFocusable(true);
-                unevenYellow.setBackgroundColor(getResources().getColor(R.color.green));
+                unevenYellow.setBackground(getResources().getDrawable(R.drawable.border));
                 noSideWalkRed.setFocusable(true);
-                noSideWalkRed.setBackgroundColor(getResources().getColor(R.color.green));
+                noSideWalkRed.setBackground(getResources().getDrawable(R.drawable.border));
                 noSideWalkYellow.setFocusable(false);
                 stairRed.setFocusable(true);
-                stairRed.setBackgroundColor(getResources().getColor(R.color.green));
+                stairRed.setBackground(getResources().getDrawable(R.drawable.border));
                 stairYellow.setFocusable(false);
                 noRampRed.setFocusable(true);
-                noRampRed.setBackgroundColor(getResources().getColor(R.color.green));
+                noRampRed.setBackground(getResources().getDrawable(R.drawable.border));
                 noRampYellow.setFocusable(false);
             }
         });
@@ -213,7 +221,7 @@ public class ConfigReportsActivity extends AppCompatActivity {
         badSideWalkYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                badSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.green));
+                badSideWalkYellow.setBackground(getResources().getDrawable(R.drawable.border));
                 badSideWalkYellow.setFocusable(true);
                 badSideWalkRed.setBackgroundColor(getResources().getColor(R.color.transparent));
                 badSideWalkRed.setFocusable(false);
@@ -223,7 +231,7 @@ public class ConfigReportsActivity extends AppCompatActivity {
         badSideWalkRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                badSideWalkRed.setBackgroundColor(getResources().getColor(R.color.green));
+                badSideWalkRed.setBackground(getResources().getDrawable(R.drawable.border));
                 badSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
                 badSideWalkRed.setFocusable(true); badSideWalkYellow.setFocusable(false);
 
@@ -232,7 +240,7 @@ public class ConfigReportsActivity extends AppCompatActivity {
         pendienteRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pendienteRed.setBackgroundColor(getResources().getColor(R.color.green));
+                pendienteRed.setBackground(getResources().getDrawable(R.drawable.border));
                 pendienteYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
                 pendienteYellow.setFocusable(false); pendienteRed.setFocusable(true);
             }
@@ -240,7 +248,7 @@ public class ConfigReportsActivity extends AppCompatActivity {
         pendienteYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pendienteYellow.setBackgroundColor(getResources().getColor(R.color.green));
+                pendienteYellow.setBackground(getResources().getDrawable(R.drawable.border));
                 pendienteRed.setBackgroundColor(getResources().getColor(R.color.transparent));
                 pendienteYellow.setFocusable(true); pendienteRed.setFocusable(false);
             }
@@ -248,84 +256,84 @@ public class ConfigReportsActivity extends AppCompatActivity {
         carRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                carRed.setBackgroundColor(getResources().getColor(R.color.green)); carYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
+                carRed.setBackground(getResources().getDrawable(R.drawable.border)); carYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
                 carYellow.setFocusable(false); carRed.setFocusable(true);
             }
         });
         carYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                carYellow.setBackgroundColor(getResources().getColor(R.color.green)); carRed.setBackgroundColor(getResources().getColor(R.color.transparent));
+                carYellow.setBackground(getResources().getDrawable(R.drawable.border)); carRed.setBackgroundColor(getResources().getColor(R.color.transparent));
                 carRed.setFocusable(false); carYellow.setFocusable(true);
             }
         });
         obstacleRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                obstacleRed.setBackgroundColor(getResources().getColor(R.color.green)); obstacleYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
+                obstacleRed.setBackground(getResources().getDrawable(R.drawable.border)); obstacleYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
                 obstacleYellow.setFocusable(false); obstacleRed.setFocusable(true);
             }
         });
         obstacleYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                obstacleYellow.setBackgroundColor(getResources().getColor(R.color.green)); obstacleRed.setBackgroundColor(getResources().getColor(R.color.transparent));
+                obstacleYellow.setBackground(getResources().getDrawable(R.drawable.border)); obstacleRed.setBackgroundColor(getResources().getColor(R.color.transparent));
                 obstacleRed.setFocusable(false); obstacleYellow.setFocusable(true);
             }
         });
         unevenrRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                unevenrRed.setBackgroundColor(getResources().getColor(R.color.green)); unevenYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
+                unevenrRed.setBackground(getResources().getDrawable(R.drawable.border)); unevenYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
                 unevenYellow.setFocusable(false); unevenrRed.setFocusable(true);
             }
         });
         unevenYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                unevenYellow.setBackgroundColor(getResources().getColor(R.color.green)); unevenrRed.setBackgroundColor(getResources().getColor(R.color.transparent));
+                unevenYellow.setBackground(getResources().getDrawable(R.drawable.border)); unevenrRed.setBackgroundColor(getResources().getColor(R.color.transparent));
                 unevenrRed.setFocusable(false); unevenYellow.setFocusable(true);
             }
         });
         noSideWalkRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                noSideWalkRed.setBackgroundColor(getResources().getColor(R.color.green)); noSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
+                noSideWalkRed.setBackground(getResources().getDrawable(R.drawable.border)); noSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
                 noSideWalkYellow.setFocusable(false); noSideWalkRed.setFocusable(true);
             }
         });
         noSideWalkYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                noSideWalkYellow.setBackgroundColor(getResources().getColor(R.color.green)); noSideWalkRed.setBackgroundColor(getResources().getColor(R.color.transparent));
+                noSideWalkYellow.setBackground(getResources().getDrawable(R.drawable.border)); noSideWalkRed.setBackgroundColor(getResources().getColor(R.color.transparent));
                 noSideWalkRed.setFocusable(false); noSideWalkYellow.setFocusable(true);
             }
         });
         stairRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                stairRed.setBackgroundColor(getResources().getColor(R.color.green)); stairYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
+                stairRed.setBackground(getResources().getDrawable(R.drawable.border)); stairYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
                 stairYellow.setFocusable(false); stairRed.setFocusable(true);
             }
         });
         stairYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                stairYellow.setBackgroundColor(getResources().getColor(R.color.green)); stairRed.setBackgroundColor(getResources().getColor(R.color.transparent));
+                stairYellow.setBackground(getResources().getDrawable(R.drawable.border)); stairRed.setBackgroundColor(getResources().getColor(R.color.transparent));
                 stairRed.setFocusable(false); stairYellow.setFocusable(true);
             }
         });
         noRampRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                noRampRed.setBackgroundColor(getResources().getColor(R.color.green)); noRampYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
+                noRampRed.setBackground(getResources().getDrawable(R.drawable.border)); noRampYellow.setBackgroundColor(getResources().getColor(R.color.transparent));
                 noRampYellow.setFocusable(false); noRampRed.setFocusable(true);
             }
         });
         noRampYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                noRampYellow.setBackgroundColor(getResources().getColor(R.color.green)); noRampRed.setBackgroundColor(getResources().getColor(R.color.transparent));
+                noRampYellow.setBackground(getResources().getDrawable(R.drawable.border)); noRampRed.setBackgroundColor(getResources().getColor(R.color.transparent));
                 noRampRed.setFocusable(false); noRampYellow.setFocusable(true);
             }
         });
