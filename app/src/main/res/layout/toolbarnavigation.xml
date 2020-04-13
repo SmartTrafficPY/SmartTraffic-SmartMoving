@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/toolbarnav"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:visibility="visible"
+    android:background="@drawable/toolbarcustom"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/cancelnavigation"
+        android:layout_height="match_parent"
+        android:background="@color/transp"
+        android:src="@drawable/closeblack"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/transp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/quantum_black_100"
+        android:text="Cancelar viaje"
+        android:textSize="23dp" />
+
+</LinearLayout>

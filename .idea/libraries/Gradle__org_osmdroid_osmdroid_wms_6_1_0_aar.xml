@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.osmdroid:osmdroid-wms:6.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/523608cf3cb317a3c5f9cf13be253059/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/523608cf3cb317a3c5f9cf13be253059/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osmdroid/osmdroid-wms/6.1.0/7c08bc54ef9bb9bda7cf2319f19780851dac4a05/osmdroid-wms-6.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

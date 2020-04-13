@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/changePassword"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background02">
+
+    <TextView
+        android:id="@+id/signUpLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambio de contraseña"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textFontWeight="2500" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/smicono" />
+
+    <TextView
+        android:id="@+id/TextViewCurrentPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cntraseña Actual"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/currentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passwordNotMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No coinciden la contraseña"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TextView_Pwd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escriba nueva contraseña"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/newPassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/TextView_Pwd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repita nueva contraseña"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/newPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_rectangle"
+        android:text="Cambiar contraseña"
+        android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/gobacktohome"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="75dp"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rectangle" />
+    </RelativeLayout>
+</LinearLayout>
