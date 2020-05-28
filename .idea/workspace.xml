@@ -154,73 +154,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a3a635-cb41-4e9a-b16b-3635f8800973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Receivers/AlarmGeoFencing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Receivers/GeofenceBroadcastReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Receivers/RemoveGeoFencing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/navigations/ChangeScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/navigations/NavigationChangeScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/DetectedActivitiesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/GeofenceTransitionsJobIntentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/LocationUpdatesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/border.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/initnav.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_login_layout.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_login_layout.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_register_layout.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_register_layout.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Interceptors/AddSMovingTokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Interceptors/AddSMovingTokenInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Interceptors/GeoJsonInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Interceptors/GeoJsonInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Interceptors/TokenUserInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Interceptors/TokenUserInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/SmartMovingAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/SmartMovingAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/ChangePasswActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/ChangePasswActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/ConfigReportsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/ConfigReportsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/RegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/SearchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/CoordinatesPoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/CoordinatesPoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Credentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/ProfileRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/ProfileRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Reports/ReportPoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Reports/ReportPoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Reports/ReportsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Reports/ReportsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Reports/ReportsPoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/Reports/ReportsPoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/SmartMovingProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/SmartMovingProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/navigations/NavigationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/navigations/NavigationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/RegistrationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/arroww.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/arroww.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circlered.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circlered.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/config_reports_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/config_reports_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/login_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/rank_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/rank_dialog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/register_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/register_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/window_info_marker_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/window_info_marker_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -255,8 +189,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="941" column="46" lean-forward="true" selection-start-line="941" selection-start-column="46" selection-end-line="941" selection-end-column="46" />
+            <state relative-caret-position="17">
+              <caret line="951" selection-start-line="951" selection-end-line="951" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -267,7 +201,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="867">
               <caret line="89" column="53" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -297,7 +231,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/RegistrationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="544">
               <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -309,8 +243,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Interceptors/TokenUserInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -322,22 +256,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/SmovingData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/SmartMovingProfile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-              </folding>
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -345,7 +264,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="527">
               <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
             </state>
           </provider>
@@ -354,8 +273,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/SmartMovingAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="646">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -486,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="605" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -496,6 +415,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="smartmoving" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="smartmoving" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+              <item name="smarttraffic.smartmoving" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -591,23 +527,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="smartmoving" type="462c0819:PsiDirectoryNode" />
               <item name="Interceptors" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="smartmoving" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="smartmoving" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-              <item name="smarttraffic.smartmoving" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -747,8 +666,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Image Layers" order="1" />
@@ -829,34 +747,10 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>758</line>
-          <properties />
-          <option name="timeStamp" value="201" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>763</line>
-          <properties />
-          <option name="timeStamp" value="203" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>767</line>
-          <properties />
-          <option name="timeStamp" value="207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/GeofenceTransitionsJobIntentService.java</url>
           <line>146</line>
           <properties />
           <option name="timeStamp" value="235" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>838</line>
-          <properties />
-          <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/LocationUpdatesService.java</url>
@@ -865,46 +759,10 @@
           <option name="timeStamp" value="241" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>833</line>
-          <properties />
-          <option name="timeStamp" value="244" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>764</line>
-          <properties />
-          <option name="timeStamp" value="269" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/LocationUpdatesService.java</url>
           <line>214</line>
           <properties />
           <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>1278</line>
-          <properties />
-          <option name="timeStamp" value="289" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>1276</line>
-          <properties />
-          <option name="timeStamp" value="290" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>820</line>
-          <properties />
-          <option name="timeStamp" value="292" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>761</line>
-          <properties />
-          <option name="timeStamp" value="294" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/GeofenceTransitionsJobIntentService.java</url>
@@ -919,12 +777,6 @@
           <option name="timeStamp" value="300" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>835</line>
-          <properties />
-          <option name="timeStamp" value="306" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/LocationUpdatesService.java</url>
           <line>204</line>
           <properties />
@@ -935,18 +787,6 @@
           <line>206</line>
           <properties />
           <option name="timeStamp" value="310" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>749</line>
-          <properties />
-          <option name="timeStamp" value="311" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>746</line>
-          <properties />
-          <option name="timeStamp" value="314" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/LocationUpdatesService.java</url>
@@ -960,65 +800,10 @@
           <properties />
           <option name="timeStamp" value="316" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java</url>
-          <line>823</line>
-          <properties class="smarttraffic.smartmoving.activities.HomeActivity" method="managerOfTransitions" />
-          <option name="timeStamp" value="313" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="141" column="85" selection-start-line="141" selection-start-column="85" selection-end-line="141" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3417#3587#0" expanded="true" />
-            <element signature="e#3586#3587#0" expanded="true" />
-            <element signature="e#3623#3795#0" expanded="true" />
-            <element signature="e#3794#3795#0" expanded="true" />
-            <element signature="e#3831#3951#0" expanded="true" />
-            <element signature="e#3950#3951#0" expanded="true" />
-            <element signature="e#3994#4899#0" expanded="true" />
-            <element signature="e#4898#4899#0" expanded="true" />
-            <element signature="e#5205#5705#0" expanded="true" />
-            <element signature="e#5704#5705#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/dataModels/ProfileRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-          <folding>
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Receivers/RemoveGeoFencing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1156,12 +941,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/config_reports_layout.xml">
       <provider editor-type-id="android-designer2" />
@@ -1292,17 +1077,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Constants.java">
+    <entry file="file://$PROJECT_DIR$/app/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/SmartMovingAPI.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="951" selection-start-line="951" selection-end-line="951" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1311,18 +1103,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="867">
           <caret line="89" column="53" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/SmovingData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1342,7 +1127,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/services/RegistrationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="544">
           <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1352,18 +1137,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Interceptors/TokenUserInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/activities/HomeActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/SmovingData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="941" column="46" lean-forward="true" selection-start-line="941" selection-start-column="46" selection-end-line="941" selection-end-column="46" />
+        <state relative-caret-position="204">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/smarttraffic/smartmoving/SmartMovingAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
